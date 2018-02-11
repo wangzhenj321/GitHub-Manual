@@ -19,7 +19,8 @@ $ git config --global -e    // 编辑当前用户的global配置
 如果需要更改其它作用域的参数，更换global为指定的即可，如果不加这个参数，默认是编辑当前仓库的config文件。这些不同作用域的配置的具体配置文件有哪些呢？ 可以通过`git help config`命令打开帮助查看，在FILES章节，但官方的帮助文档描述的并不详尽，不同OS的`git`客户端都有一些个性化的内容。
 
 查看所有配置项时，可以通过添加--show-origin参数显示具体配置项属于哪个文件，你会发现config文件不是3个是4个。
-[[/img/git-config/git_config_list_show_origin.png]]
+
+![](img/git-config/git_config_list_show_origin.png?raw=true)
 
 #### system
 这个文件一般都在/etc/gitconfig，优先级最低，对于windows用户在`git bash`里的路径是/mingw64/etc/gitconfig。
