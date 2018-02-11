@@ -8,7 +8,7 @@ Managers will receive the notification for your pull request. Through testing yo
 
 The “issue -> pull request -> merge” cycle has been conceptually descried as above, and then you can refer to the following sections to implement this cycle in practice. The Section "Basic settings for Git" describes few basic settings for Git in your local machine, which you only need to do once time. Other sections describe three steps of the “issue -> pull request -> merge” cycle, respectively.
 
-[[/img/Issue-to-Pull-Request-to-Merge/git_basic_workflow.png]]
+![](img/Issue-to-Pull-Request-to-Merge/git_basic_workflow.png?raw=true)
 
 #### Table of Contents
 [Basic settings for Git](#basic-settings-for-git)
