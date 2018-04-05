@@ -125,6 +125,8 @@ $ git show {commit ID}
 $ git checkout {commit ID}      // switch to the commit point of “commit ID"
 
 $ git checkout {branch name}    // switch to the branch of “branch name"
+
+$ git checkout -- {file name}   // discard changes of "file name" in working directory
 ```
 
 #### branch
