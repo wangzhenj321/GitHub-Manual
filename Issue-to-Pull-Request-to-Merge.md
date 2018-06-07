@@ -32,7 +32,7 @@ The “issue -> pull request -> merge” cycle has been conceptually descried as
 [References](#references)
 
 ## Basic settings for Git
-If you finished these settings, it will be easier to understand who makes the commits from committing logs for your coauthors ([[git config|git config]]).
+If you finished these settings, it will be easier to understand who makes the commits from committing logs for your coauthors.
 
 ```
 $ git config --global user.name "Your Name"          // Setting of your name
