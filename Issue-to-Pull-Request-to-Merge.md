@@ -117,9 +117,9 @@ Whenever you begin work on a new feature or bugfix, you will need to create a ne
 ```
 $ git checkout master                   // Checkout the branch where you want to start your new branch
 
-git branch TestPullRequest              // Create a new branch named as TestPullRequest
+$ git branch TestPullRequest              // Create a new branch named as TestPullRequest
 
-git checkout TestPullRequest            // Switch to your new branch to start your work
+$ git checkout TestPullRequest            // Switch to your new branch to start your work
 ```
 
 Now, you can go ahead to make changes you want to. Once you finished your changes, you’ll need to input the following commands to commit your changes.
