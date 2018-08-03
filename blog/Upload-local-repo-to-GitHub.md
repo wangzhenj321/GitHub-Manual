@@ -14,7 +14,7 @@ If your local GIT repo is already set up, skips steps 2 and 3
 ## Notes
 When you create the remote repository, don't choose "Initialize this repository with a README". Otherwise, you will get the following error.
 
-![](img/Upload-local-repo-to-GitHub/git_push_rejected.png?raw=true)
+![](../img/Upload-local-repo-to-GitHub/git_push_rejected.png?raw=true)
 
 ## References
 1. [import existing source code to github](https://stackoverflow.com/questions/4658606/import-existing-source-code-to-github)

@@ -8,7 +8,7 @@ Managers will receive the notification for your pull request. Through testing yo
 
 The “issue -> pull request -> merge” cycle has been conceptually descried as above, and then you can refer to the following sections to implement this cycle in practice. The Section "Basic settings for Git" describes few basic settings for Git in your local machine, which you only need to do once time. Other sections describe three steps of the “issue -> pull request -> merge” cycle, respectively.
 
-![](img/Issue-to-Pull-Request-to-Merge/git_basic_workflow.png?raw=true)
+![](../img/Issue-to-Pull-Request-to-Merge/git_basic_workflow.png?raw=true)
 
 #### Table of Contents
 [Basic settings for Git](#basic-settings-for-git)
@@ -44,7 +44,7 @@ $ git config --global color.ui true                  // Setting of display color
 $ git config -l                                      // Confirm the settings
 ```
 
-![](img/Issue-to-Pull-Request-to-Merge/git_log.png?raw=true)
+![](../img/Issue-to-Pull-Request-to-Merge/git_log.png?raw=true)
 
 The following command is also recommended to set up Sublime Text as Git message editor.
 
@@ -70,11 +70,11 @@ git config --global core.editor "subl -n -w"
 ## Creating a Fork
 After received notification of “issue” from managers, please follow the next sections to implement the task of “issue” to finish the “pull request” step. Sign in the GitHub, find the repository that you want to fork. Click the “Fork” button at the upper right corner. 
 
-![](img/Issue-to-Pull-Request-to-Merge/fork_button.png?raw=true)
+![](../img/Issue-to-Pull-Request-to-Merge/fork_button.png?raw=true)
 
 Once you’ve done that, you can find that repository in your account and clone it to your local machine.
 
-![](img/Issue-to-Pull-Request-to-Merge/https_url_for_clone.png?raw=true)
+![](../img/Issue-to-Pull-Request-to-Merge/https_url_for_clone.png?raw=true)
 
 In order to clone the fork to your local machine, copy the HTTPS URL from the list of “Clone or download” and use the following command.
 
@@ -88,7 +88,7 @@ After you finished cloning the repository, you can verify the new remote named a
 $ git remote -v                                                // Verify the new remote named as “origin”
 ```
 
-![](img/Issue-to-Pull-Request-to-Merge/git_remote_origin.png?raw=true)
+![](../img/Issue-to-Pull-Request-to-Merge/git_remote_origin.png?raw=true)
 
 In order to make sure you keep the repository up to date, you should track the original “upstream” repository from where you forked. To do this, you will need to add a new remote.
 
@@ -98,7 +98,7 @@ $ git remote add upstream https://github.com/geosurf-dev/SandBox.git    // Add �
 $ git remote -v                                                         // Verify the new remote named as “upstream”
 ```
 
-![](img/Issue-to-Pull-Request-to-Merge/git_remote_upstream.png?raw=true)
+![](../img/Issue-to-Pull-Request-to-Merge/git_remote_upstream.png?raw=true)
 
 ## Keeping your local repository up-to-date
 Whenever you want to update the repository by merging the upstream changes, you will need to fetch the upstream and merge it. 
@@ -151,12 +151,12 @@ Once you finished the previous process, you can push your changes to your GitHub
 $ git push origin HEAD                  // Push commits to origin
 ```
 
-![](img/Issue-to-Pull-Request-to-Merge/git_push_origin_HEAD.png?raw=true)
+![](../img/Issue-to-Pull-Request-to-Merge/git_push_origin_HEAD.png?raw=true)
 
 ## Submitting a Pull Request
 Once you’ve pushed all of your changes to your GitHub account (origin), go to the page of that fork on your GitHub, and click the “Pull Request” to create a pull request. While creating a pull request, be careful to select the “base fork”, “base”, “head fork” and “compare”. After you sent the “Pull Request”, it’s always possible to get comments from managers to ask for some improvement. When you need to make any changes to your pull request based on managers’ comments, just push the updates to GitHub (origin). Your pull request will automatically track the changes on your development branch.
 
-![](img/Issue-to-Pull-Request-to-Merge/create_pull_request.png?raw=true)
+![](../img/Issue-to-Pull-Request-to-Merge/create_pull_request.png?raw=true)
 
 ## Merging a Pull Request
 [Merging a pull request](https://help.github.com/articles/merging-a-pull-request/)

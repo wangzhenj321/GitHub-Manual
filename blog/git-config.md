@@ -20,7 +20,7 @@ $ git config --global -e    // 编辑当前用户的global配置
 
 查看所有配置项时，可以通过添加--show-origin参数显示具体配置项属于哪个文件，你会发现config文件不是3个是4个。
 
-![](img/git-config/git_config_list_show_origin.png?raw=true)
+![](../img/git-config/git_config_list_show_origin.png?raw=true)
 
 #### system
 这个文件一般都在/etc/gitconfig，优先级最低，对于windows用户在`git bash`里的路径是/mingw64/etc/gitconfig。
