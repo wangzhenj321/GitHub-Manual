@@ -3,13 +3,27 @@ Basic manual about how to use GitHub
 
 ## Basic
 
-2. [Cache your GitHub password](blog/Cache-your-GitHub-password.md)
-3. [Clean up unused git branches](blog/Clean-up-unused-git-branches.md)
-3. [Basic commands](blog/Basic-commands-in-Git.md)
+1. [Issue to Pull Request to Merge](blog/Issue-to-Pull-Request-to-Merge.md)
+2. [How to Use Git and GitHub](blog/How-to-Use-Git-and-GitHub.md)
 
 ## Commands
 
-1. [](blog/A-note-about-git-merge.md)
+1. [Basic commands in Git](blog/Basic-commands-in-Git.md)
+2. [git cherry-pick](blog/git-cherry‐pick.md)
+3. [git clean](blog/git-clean.md)
+4. [git config](blog/git-config.md)
+5. [git merge/rebase/squash](blog/git-merge-rebase-squash.md)
+6. [git rebase ‐i](blog/git-rebase-‐i.md)
 
 ## Q & A
 
+1. [Cache your GitHub password](blog/Cache-your-GitHub-password.md)
+2. [Clean up unused git branches](blog/Clean-up-unused-git-branches.md)
+3. [A note about git merge](blog/A-note-about-git-merge.md)
+4. [Detached HEAD](blog/Detached-HEAD.md)
+5. [Rename a directory](Rename-a-directory.md)
+6. [Table of content in GitHub wiki](Table-of-content-in-GitHub-wiki.md)
+7. [Update a forked repo](blog/Update-a-forked-repo.md)
+8. [Upload local repo to GitHub](blog/Upload-local-repo-to-GitHub.md)
+9. [Use SSH over HTTPS port(443)](blog/Use-SSH-over-HTTPS-port-(443).md)
+10. [gitignore is not working](blog/gitignore-is-not-working.md)
