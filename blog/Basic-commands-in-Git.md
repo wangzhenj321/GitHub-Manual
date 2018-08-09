@@ -1,8 +1,8 @@
-#### gc
+### gc
 
 - `git gc`
 
-#### help
+### help
 
 - `git help {-a | -g}`
 
@@ -12,46 +12,49 @@
 
     read about a specific sub-command or concept
 
-#### init
+### init
 
 - `git init`
 
     initialize a repository in an existing directory
 
-#### log
-```
-// show the committed logs
-$ git log
+### log
 
-// --stat gives some statistics which files have changed in each commit
-$ git log --stat
+- `git log`
 
-// see the visual representation of the commit history
-$ git log --graph --oneline {branch name 1} {branch name 2} ...
+    show the committed logs
 
-// -n flag means that git log will only show that number of commits
-$ git log -n {number}
+- `git log --stat`
 
-// Draw a text-based graphical representation of the commit history on the left hand side of the output.
-// This may cause extra lines to be printed in between commits, in order for the graph history to be drawn properly.
-$ git log --graph
+    `--stat` gives some statistics which files have changed in each commit
 
-// Pretty-print the contents of the commit logs in a given format, where <format> can be one of oneline, 
-// short, medium, full, fuller, email, raw, format:<string> and tformat:<string>.
-$ git log --pretty[=<format>]
+- `git log --graph --oneline {branch name 1} {branch name 2} ...`
 
-// Instead of showing the full 40-byte hexadecimal commit object name, show only a partial prefix.
-$ git log --abbrev-commit
+    see the visual representation of the commit history
 
-// This is a shorthand for "--pretty=oneline --abbrev-commit" used together.
-$ git log --oneline
+- `git log -n {number}`
 
-// Print out the ref names of any commits that are shown. 
-// If short is specified, the ref name prefixes refs/heads/, refs/tags/ and refs/remotes/ will not be printed.
-// If full is specified, the full ref name (including prefix) will be printed.
-// The default option is short.
-$ git log --decorate[=short|full|no]
-```
+    `-n` flag means that git log will only show that number of commits
+
+- `git log --graph`
+
+    Draw a text-based graphical representation of the commit history on the left hand side of the output. This may cause extra lines to be printed in between commits, in order for the graph history to be drawn properly.
+
+- `git log --pretty[=<format>]`
+
+    Pretty-print the contents of the commit logs in a given format, where <format> can be one of oneline, short, medium, full, fuller, email, raw, format:<string> and tformat:<string>.
+
+- `git log --abbrev-commit`
+
+    Instead of showing the full 40-byte hexadecimal commit object name, show only a partial prefix.
+
+- `git log --oneline`
+
+    This is a shorthand for "--pretty=oneline --abbrev-commit" used together.
+
+- `git log --decorate[=short|full|no]`
+
+    Print out the ref names of any commits that are shown. If short is specified, the ref name prefixes refs/heads/, refs/tags/ and refs/remotes/ will not be printed. If full is specified, the full ref name (including prefix) will be printed. The default option is short.
 
 #### status
 ```
