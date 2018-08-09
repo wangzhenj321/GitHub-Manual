@@ -56,60 +56,69 @@
 
     Print out the ref names of any commits that are shown. If short is specified, the ref name prefixes refs/heads/, refs/tags/ and refs/remotes/ will not be printed. If full is specified, the full ref name (including prefix) will be printed. The default option is short.
 
-#### status
-```
-$ git status             // check the status of your files
+### status
 
-$ git status -uno        // Show no untracked files.
+- `git status`
 
-$ git status -unormal    // Shows untracked files and directories.
+    check the status of your files
 
-// When -u option is not used, untracked files and directories are shown (i.e. the 
-// same as specifying normal), to help you avoid forgetting to add newly created files.
-// Also shows individual files in untracked directories.
-$ git status -uall
-```
+- `git status -uno`
 
-#### reset
-```
-// undo the “git add” : put the file in the staging area back to the working directory
-$ git reset {filename in the staging area}
+    Show no untracked files.
 
-// Undo the changing operations in the working directory and the staging area. Any 
-// changes to tracked files in the working tree since <commit> are discarded.
-$ git reset --hard
+- `git status -unormal`
 
-// Rewind the master branch to get rid of those three commits, and keep the changes of
-// those three commits in the working directory. If you want to remove these changes,
-// you can use previous option '--hard'.
-$ git reset HEAD~3
-```
+    Shows untracked files and directories.
 
-#### add
-```
-// add the file from the working directory into the staging area
-$ git add {filename in the working directory}
-```
+- `git status -uall`
 
-#### commit
-```
-$ git commit [-m “Commit message”]    // commit the current changes in the staging area
-```
+    When `-u` option is not used, untracked files and directories are shown (i.e. the same as specifying normal), to help you avoid forgetting to add newly created files. Also shows individual files in untracked directories.
 
-#### clone
-```
-$ git clone {url} [rename directory]    // clone the whole repository from the url
-```
+### reset
 
-#### remote
-```
-$ git remote       // view remotes
+- `git reset {filename in the staging area}`
 
-// (create an empty repository on Github first) add the repository on Github as a remote
-$ git remote add {reference name of remote repository | origin} {url}
+    undo the “git add” : put the file in the staging area back to the working directory
 
-$ git remote -v    // -v means that git remote will output more information
-```
+- `git reset --hard`
+
+    Undo the changing operations in the working directory and the staging area. Any changes to tracked files in the working tree since <commit> are discarded.
+
+- `git reset HEAD~3`
+
+    Rewind the master branch to get rid of those three commits, and keep the changes of those three commits in the working directory. If you want to remove these changes, you can use previous option '--hard'.
+
+### add
+
+- `git add {filename in the working directory}`
+
+    add the file from the working directory into the staging area
+
+### commit
+
+- `git commit [-m “Commit message”]`
+
+    commit the current changes in the staging area
+
+### clone
+
+- `git clone {url} [rename directory]`
+
+    clone the whole repository from the url
+
+### remote
+
+- `git remote`
+
+    view remotes
+
+- `git remote add {reference name of remote repository | origin} {url}`
+
+    (create an empty repository on Github first) add the repository on Github as a remote
+
+- `git remote -v`
+
+    `-v` means that git remote will output more information
 
 #### fetch
 ```
