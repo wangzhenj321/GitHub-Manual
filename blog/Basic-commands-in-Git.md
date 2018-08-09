@@ -200,7 +200,7 @@
 
 ### merge
 
-[[A note about git merge|A note about git merge]]
+[A note about git merge](A-note-about-git-merge.md)
 
 - `git merge {branch name 1} {branch name 2} ...`
 
@@ -245,6 +245,8 @@
     `-a`: specify the tag name; `-m`: specify the tag message
 
 ### clean
+
+[git clean](git-clean.md)
 
 - `git clean`
 
