@@ -1,4 +1,4 @@
-**local branch**
+### local branch
 
 You can delete a merged local branch with:
 ```
@@ -9,7 +9,7 @@ If it's not merged, use:
 git branch -D branchname
 ```
 
-**remote branch**
+### remote branch
 
 To delete it from the remote repo use:
 ```
@@ -19,7 +19,7 @@ With this command, the corresponding remote-tracking branch will also be deleted
 
 Or you can delete the remote branch with the delete button in the list of branch on your GitHub.
 
-**remote-tracking branch**
+### remote-tracking branch
 
 Once you delete the branch from the remote, you can prune to get rid of remote-tracking branches with:
 ```
