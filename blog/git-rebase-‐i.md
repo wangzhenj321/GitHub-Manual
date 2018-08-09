@@ -65,13 +65,23 @@ Assuming your head is at `ab1c41c` from your example, invoke the rebase as follo
 ```
 git rebase -i HEAD~7
 ```
-This tells git you want to manipulate the last 8 or so commits. You'll be dropped into your editor with a listing of the commits and some instructions.
+**This tells git you want to manipulate the last 8 or so commits. You'll be dropped into your editor with a listing of the commits and some instructions.**
 
 Delete the lines that contain the commits to remove, save and quit. Git will preform the rebase, and that's it.
 
 Keep in mind, because of the rebase, if you want to push to the same branch you'll need to pass the option `--force`.
 
 **Disclaimer** Rebasing and force pushing can cause you to lose work or piss people off, so just make sure you understand what you're doing. :)
+
+## Example
+
+**Step 1:** `git log`
+
+![](../img/git-rebase--i/git-log.png?raw=true)
+
+**Step 2:** `git rebase -i HEAD~3`
+
+![](../img/git-rebase--i/git-rebase-i.png?raw=true)
 
 ## References
 1. [Remove 4 commits from my git history](https://stackoverflow.com/questions/11113322/remove-4-commits-from-my-git-history)
