@@ -24,7 +24,7 @@ Other maintainers prefer to rebase or cherry-pick contributed work on top of the
 
 The other way to move introduced work from one branch to another is to cherry-pick it. A cherry-pick in Git is like a rebase for a single commit. It takes the patch that was introduced in a commit and tries to reapply it on the branch you’re currently on. This is useful if you have a number of commits on a topic branch and you want to integrate only one of them, or if you only have one commit on a topic branch and you’d prefer to cherry-pick it rather than run rebase. For example, suppose you have a project that looks like this:
 
-![](../img/git-cherry‐pick/cherry-pick-1.png?raw=true)
+![](../img/git-cherry-pick/cherry-pick-1.png?raw=true)
 
 If you want to pull commit e43a6 into your master branch, you can run
 
@@ -37,6 +37,6 @@ Finished one cherry-pick.
  
 This pulls the same change introduced in e43a6, but you get a new commit SHA-1 value, because the date applied is different. Now your history looks like this:
 
-![](../img/git-cherry‐pick/cherry-pick-2.png?raw=true)
+![](../img/git-cherry-pick/cherry-pick-2.png?raw=true)
 
 Now you can remove your topic branch and drop the commits you didn’t want to pull in.
