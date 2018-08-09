@@ -271,7 +271,7 @@
 
 - `git stash pop`
 
-    Remove a single stashed state from the stash list and apply it on top of the current working tree state, i.e., do the inverse operation of git stash save. The working directory must match the index.
+    Remove a single stashed state from the stash list and apply it on top of the current working tree state, i.e., do the inverse operation of `git stash save`. The working directory must match the index.
 
 - `git stash apply`
 
