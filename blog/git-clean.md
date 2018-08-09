@@ -8,6 +8,10 @@ As you edit files, Git sees them as modified, because you’ve changed them sinc
 
 ![](../img/git-clean/untracked_file.png?raw=true)
 
+## References
+
+1. [Git Basics - Recording Changes to the Repository](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository)
+
 # Part 2: How to remove untracked files?
 
 ## Question
