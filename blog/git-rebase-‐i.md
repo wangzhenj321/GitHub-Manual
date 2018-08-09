@@ -67,6 +67,10 @@ git rebase -i HEAD~7
 ```
 **This tells git you want to manipulate the last 8 or so commits. You'll be dropped into your editor with a listing of the commits and some instructions.**
 
+---
+**Remarks:** For convenient edit operation, it's better to setup an editor, such as Sublime Text, as Git message editor.
+---
+
 Delete the lines that contain the commits to remove, save and quit. Git will preform the rebase, and that's it.
 
 Keep in mind, because of the rebase, if you want to push to the same branch you'll need to pass the option `--force`.
