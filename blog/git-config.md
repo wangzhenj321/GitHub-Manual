@@ -22,21 +22,21 @@ $ git config --global -e    // 编辑当前用户的global配置
 
 ![](../img/git-config/git_config_list_show_origin.png?raw=true)
 
-#### system
+### system
 这个文件一般都在/etc/gitconfig，优先级最低，对于windows用户在`git bash`里的路径是/mingw64/etc/gitconfig。
 
-#### global
+### global
 文件在~/.gitconfig这是用户使用最多的config文件，大多数的配置项都在这里配置。但这个作用域的配置文件有两个，另外一个是官方所说Second user-specific configuration file路径在$XDG_CONFIG_HOME/git/config，对于windows用户来说是%ProgramData%\git\config
 这个配置文件官方的说法是这样的。
 > Second user-specific configuration file. If $XDG_CONFIG_HOME is not set or empty, $HOME/.config/git/config will be used. Any single-valued variable set in this file will be overwritten by whatever is in ~/.gitconfig. It is a good idea not to create this file if you sometimes use older versions of Git, as support for this file was added fairly recently.
 
 大致意思是这是第二个用户配置文件，如果$XDG_CONFIG_HOME不存在或为空，这个文件就是$HOME/.config/git/config, 这个配置文件中的任何单值变量都将被~/.gitconfig覆盖，该文件是最近才添加并被支持的。 那么在优先级上，肯定是~/.gitconfig更高一些。起初我不知道这个文件的存在，使用`git config --global --list`参看global配置项时，并不会load这个specific的配置文件，但使用`git config --list`时又load这个文件。
 
-#### 自定义配置文件
+### 自定义配置文件
 global级别的配置文件是我使用做多自定义最多的配置文件，如果重装系统还要重新来过，所以我自己自定义了一个独立的config文件放在dropbox里，然后使用下面的命令`include`我的自定义文件到global配置文件。
 ```
 $ git config --global include.path ~/dropbox/bak/.gitconfig
 ```
 
-#### local
+### local
 当前仓库的配置文件，.git/config没啥好说的，打开看看就全懂了。
