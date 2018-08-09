@@ -120,117 +120,154 @@
 
     `-v` means that git remote will output more information
 
-#### fetch
-```
-// update all of the local copies of every branch for the remote
-// git pull = git fetch + git merge
-$ git fetch {reference name of remote repository | origin}                            
-```
+### fetch
 
-#### pull
-```
-// pull the changes you made on Github into your local repository
-$ git pull {reference name of remote repository | origin} {local branch name}   
-```
+- `git fetch {reference name of remote repository | origin}`
 
-#### push
-```
-// send local changes to the remote
-$ git push {reference name of remote repository | origin} {local branch name}
-```
+    update all of the local copies of every branch for the remote (`git pull = git fetch + git merge`)
 
-#### diff
-```
-$ git diff             // compare the working directory with the staging area
+### pull
 
-$ git diff --staged    // compare the staging area with the latest committed
+- `git pull {reference name of remote repository | origin} {local branch name}`
 
-$ git diff {commit ID 1} {commit ID 2}    // compare the commit ID 1 with the commit ID 2
-```
+    pull the changes you made on Github into your local repository
 
-#### show
-```
-// show the diff between this commit and its parent without actually knowing what the
-// parent was
-$ git show {commit ID}
-```
+### push
 
-#### checkout
-```
-$ git checkout {commit ID}      // switch to the commit point of “commit ID"
+- `git push {reference name of remote repository | origin} {local branch name}`
 
-$ git checkout {branch name}    // switch to the branch of “branch name"
+    send local changes to the remote
 
-$ git checkout -- {file name}   // discard changes of "file name" in working directory
-```
+### diff
 
-#### branch
-```
-$ git branch                    // list the branches
+- `git diff `
 
-$ git branch -a                 // list both remote-tracking branches and local branches
+    compare the working directory with the staging area
 
-$ git branch {branch name}      // create the new branch, named of “branch name”
+- `git diff --staged`
 
-$ git branch -m {old name} {new name}    // rename a branch while pointed to any branch
+    compare the staging area with the latest committed
 
-$ git branch -m {new name}               // rename the current branch
+- `git diff {commit ID 1} {commit ID 2}`
 
-// only delete the label of branch, not delete the commits in the branch
-$ git branch -d {branch name} 
-```
+    compare the commit ID 1 with the commit ID 2
 
-#### merge
+### show
+
+- `git show {commit ID}`
+
+    show the diff between this commit and its parent without actually knowing what the parent was
+
+### checkout
+
+- `git checkout {commit ID}`
+
+    switch to the commit point of “commit ID"
+
+- `git checkout {branch name}`
+
+    switch to the branch of “branch name"
+
+- `git checkout -- {file name}`
+
+    discard changes of "file name" in working directory
+
+### branch
+
+- `git branch`
+
+    list the branches
+
+- `git branch -a`
+
+    list both remote-tracking branches and local branches
+
+- `git branch {branch name}`
+
+    create the new branch, named of “branch name”
+
+- `git branch -m {old name} {new name}`
+
+    rename a branch while pointed to any branch
+
+- `git branch -m {new name}`
+
+    rename the current branch
+
+- `git branch -d {branch name}`
+
+    only delete the label of branch, not delete the commits in the branch
+
+### merge
+
 [[A note about git merge|A note about git merge]]
-```
-// git checkout master: to make sure on branch master, and let the master branch
-// to update and point to the merged version
-$ git merge {branch name 1} {branch name 2} ...
-```
 
-#### tag
-```
-$ git tag                           // list the tags
+- `git merge {branch name 1} {branch name 2} ...`
 
-$ git tag {tag name}                // create a tag on the latest commit
+    `git checkout master` to make sure on branch master, and let the master branch to update and point to the merged version
 
-$ git tag {tag name} {commit ID}    // create a tag on the “commit ID”
+### tag
 
-$ git show {tag name}               // show the detail information of a tag
-        
-$ git tag -d {tag name}             // delete the local tag
+- `git tag`
 
-$ git push origin {tag name}        // push the tag to origin
+    list the tags
 
-$ git push origin --tags            // push all the tags to origin
+- `git tag {tag name}`
 
-$ git tag -d {tag name}             // delete the remote tag on origin
+    create a tag on the latest commit
 
-// -a: specify the tag name
-// -m: specify the tag message
-$ git tag -a {tag name} -m {“tag message”} {commit ID}
-```
+- `git tag {tag name} {commit ID}`
 
-#### clean
-```
-$ git clean    // remove untracked files from the working tree
-```
+    create a tag on the “commit ID”
 
-#### stash
-```
-// Save your local modifications to a new stash entry and roll them back to HEAD (in 
-// the working tree and in the index). The <message> part is optional and gives the
-// description along with the stashed state.
-$ git stash save
+- `git show {tag name}`
 
-$ git stash list     // List the stash entries that you currently have.
+    show the detail information of a tag
 
-// Remove a single stashed state from the stash list and apply it on top of the 
-// current working tree state, i.e., do the inverse operation of git stash save.
-// The working directory must match the index.
-$ git stash pop
+- `git tag -d {tag name}`
 
-$ git stash apply    // Like pop, but do not remove the state from the stash list.
+    delete the local tag
 
-$ git stash clear    // Remove all the stash entries.  
-```
+- `git push origin {tag name}`
+
+    push the tag to origin
+
+- `git push origin --tags`
+
+    push all the tags to origin
+
+- `git tag -d {tag name}`
+
+    delete the remote tag on origin
+
+- `git tag -a {tag name} -m {“tag message”} {commit ID}`
+
+    `-a`: specify the tag name; `-m`: specify the tag message
+
+### clean
+
+- `git clean`
+
+    remove untracked files from the working tree
+
+### stash
+
+- `git stash save`
+
+    Save your local modifications to a new stash entry and roll them back to HEAD (in the working tree and in the index). The <message> part is optional and gives the description along with the stashed state.
+
+- `git stash list`
+
+    List the stash entries that you currently have.
+
+- `git stash pop`
+
+    Remove a single stashed state from the stash list and apply it on top of the current working tree state, i.e., do the inverse operation of git stash save. The working directory must match the index.
+
+- `git stash apply`
+
+    Like pop, but do not remove the state from the stash list.
+
+- `git stash clear`
+
+    Remove all the stash entries.
