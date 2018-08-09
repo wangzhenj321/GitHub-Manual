@@ -1,19 +1,22 @@
 #### gc
-```
-$ git gc
-```
+
+- `git gc`
 
 #### help
-```
-$ git help {-a | -g}              // list available sub-commands and some concept guides
 
-$ git help {command | concept}    // read about a specific sub-command or concept
-```
+- `git help {-a | -g}`
+
+    list available sub-commands and some concept guides
+
+- `git help {command | concept}`
+
+    read about a specific sub-command or concept
 
 #### init
-```
-$ git init    // initialize a repository in an existing directory
-```
+
+- `git init`
+
+    initialize a repository in an existing directory
 
 #### log
 ```
