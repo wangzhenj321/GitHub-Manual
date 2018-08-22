@@ -119,7 +119,7 @@ commit 4aa46738723b6ae1ca366cf064c3e27b0c6e99ee
 
 ---
 
-Since the `commit 8161de79823e4ef4550fec5a427682d463737cc3` is the dummy merge commit, so all merged commits in this dummy merge commit (***no matter how many of them***) become the manipulatable commits. In this example, only `commit 4aa46738723b6ae1ca366cf064c3e27b0c6e99ee` becomes the manipulatable commit. Finally, the two commits shown as the following figure are 
+Since the `commit 8161de79823e4ef4550fec5a427682d463737cc3` is the dummy merge commit, so all merged commits in this dummy merge commit (***no matter how many of them***) become the manipulatable commits. In this example, only `commit 4aa46738723b6ae1ca366cf064c3e27b0c6e99ee` becomes the manipulatable commit. Finally, the two manipulatable commits shown as the following figure are 
 
 ```
 commit 4aa46738723b6ae1ca366cf064c3e27b0c6e99ee
