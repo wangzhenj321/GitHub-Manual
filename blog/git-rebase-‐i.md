@@ -115,7 +115,7 @@ commit 4aa46738723b6ae1ca366cf064c3e27b0c6e99ee
 
 ---
 
-Please use `git log --graph` instead of `git log` to show the commit list.
+**Remarks:** Please use `git log --graph` instead of `git log` to show the commit list.
 
 ---
 
