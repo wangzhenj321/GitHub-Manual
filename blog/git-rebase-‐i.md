@@ -128,5 +128,7 @@ commit 6a79e4db7ba0e82c8a0a52d0e1b95da1f6c02dfd
 
 ![](../img/git-rebase--i/git-rebase-i-dummy-merge.png?raw=true)
 
+If the manipulatable commit is the dummy merge commit, all merged commits of it replace it to become the manipulatable commits. This also means that this dummy merge commits will be removed from the commit history, even though there is no operation in `git rebase -i`. 
+
 ## References
 1. [Remove 4 commits from my git history](https://stackoverflow.com/questions/11113322/remove-4-commits-from-my-git-history)
