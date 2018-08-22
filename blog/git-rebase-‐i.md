@@ -93,7 +93,7 @@ Keep in mind, because of the rebase, if you want to push to the same branch you'
 
 **Step 1:** `git log --graph`
 
-The "Author: Kazumi Iwane <32505663+kazumi-iwane@users.noreply.github.com>" of the "commit 8161de79823e4ef4550fec5a427682d463737cc3" shows that this commit is a dummy commit due to the merge operation on github. The so-called dummy merge commit means that this commit contains no modification but only merges some commits into the mainline branch. In general, this kind of commit occurs while merging the commits of a pull request into the mainline branch, and it will influence the number of manipulatable commits of the command `git rebase -i`. 
+The `Author: Kazumi Iwane <32505663+kazumi-iwane@users.noreply.github.com>` of the `commit 8161de79823e4ef4550fec5a427682d463737cc3` shows that this commit is a dummy commit due to the merge operation on github. The so-called dummy merge commit means that this commit contains no modification but only merges some commits into the mainline branch. In general, this kind of commit occurs while merging the commits of a pull request into the mainline branch, and it will influence the number of manipulatable commits of the command `git rebase -i`. 
 
 ![](../img/git-rebase--i/git-log-dummy-merge.png?raw=true)
 
