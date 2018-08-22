@@ -79,7 +79,7 @@ Keep in mind, because of the rebase, if you want to push to the same branch you'
 
 **Disclaimer** Rebasing and force pushing can cause you to lose work or piss people off, so just make sure you understand what you're doing. :)
 
-## Example
+## Example 1
 
 **Step 1:** `git log`
 
@@ -88,6 +88,16 @@ Keep in mind, because of the rebase, if you want to push to the same branch you'
 **Step 2:** `git rebase -i HEAD~3`
 
 ![](../img/git-rebase--i/git-rebase-i.png?raw=true)
+
+## Example 2
+
+**Step 1:** `git log --graph`
+
+![](../img/git-rebase--i/git-log-dummy-merge.png?raw=true)
+
+**Step 2:** `git rebase -i HEAD~2`
+
+![](../img/git-rebase--i/git-rebase-i-dummy-merge.png?raw=true)
 
 ## References
 1. [Remove 4 commits from my git history](https://stackoverflow.com/questions/11113322/remove-4-commits-from-my-git-history)
