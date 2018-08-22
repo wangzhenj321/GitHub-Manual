@@ -89,7 +89,7 @@ Keep in mind, because of the rebase, if you want to push to the same branch you'
 
 ![](../img/git-rebase--i/git-rebase-i.png?raw=true)
 
-## Example 2 dummy merge commit from github website
+## Example 2 dummy merge commits from github website
 
 **Step 1:** `git log --graph`
 
