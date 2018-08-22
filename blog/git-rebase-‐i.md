@@ -89,13 +89,42 @@ Keep in mind, because of the rebase, if you want to push to the same branch you'
 
 ![](../img/git-rebase--i/git-rebase-i.png?raw=true)
 
-## Example 2
+## Example 2 dummy merge commit from github website
 
 **Step 1:** `git log --graph`
+
+The "Author: Kazumi Iwane <32505663+kazumi-iwane@users.noreply.github.com>" of the "commit 8161de79823e4ef4550fec5a427682d463737cc3" shows that this commit is a dummy commit due to the merge operation on github. The so-called dummy merge commit means that this commit contains no modification but only merges some commits into the mainline branch. In general, this kind of commit occurs while merging the commits of a pull request into the mainline branch, and it will influence the number of manipulatable commits of the command `git rebase -i`. 
 
 ![](../img/git-rebase--i/git-log-dummy-merge.png?raw=true)
 
 **Step 2:** `git rebase -i HEAD~2`
+
+The `HEAD~2` means that the newest two commits are the manipulatable commits. From the view of commit list, these two commits are
+
+```
+commit 8161de79823e4ef4550fec5a427682d463737cc3
+commit 6a79e4db7ba0e82c8a0a52d0e1b95da1f6c02dfd
+```
+
+instead of
+
+```
+commit 8161de79823e4ef4550fec5a427682d463737cc3
+commit 4aa46738723b6ae1ca366cf064c3e27b0c6e99ee
+```
+
+---
+
+Please use `git log --graph` instead of `git log` to show the commit list.
+
+---
+
+Since the `commit 8161de79823e4ef4550fec5a427682d463737cc3` is the dummy merge commit, so all merged commits in this dummy merge commit (***no matter how many of them***) become the manipulatable commits. In this example, only `commit 4aa46738723b6ae1ca366cf064c3e27b0c6e99ee` becomes the manipulatable commit. Finally, the two commits shown as the following figure are 
+
+```
+commit 4aa46738723b6ae1ca366cf064c3e27b0c6e99ee
+commit 6a79e4db7ba0e82c8a0a52d0e1b95da1f6c02dfd
+```
 
 ![](../img/git-rebase--i/git-rebase-i-dummy-merge.png?raw=true)
 
