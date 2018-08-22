@@ -3,7 +3,7 @@
 | [gc](#gc) | [help](#help) | [init](#init) | [log](#log) | [status](#status) | [reset](#reset) | [add](#add) | [commit](#commit) | [clone](#clone) | [remote](#remote) |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | [**fetch**](#fetch) | [**pull**](#pull) | [**push**](#push) | [**diff**](#diff) | [**show**](#show) | [**checkout**](#checkout) | [**branch**](#branch) | [**merge**](#merge) | [**tag**](#tag) | [**clean**](#clean) |
-| [**stash**](#stash) |
+| [**stash**](#stash) | [**revert**](#revert) |
 
 ### gc
 
@@ -93,7 +93,7 @@
 
 - `git reset HEAD~3`
 
-    Rewind the master branch to get rid of those three commits, and keep the changes of those three commits in the working directory. If you want to remove these changes, you can use previous option '--hard'.
+    Rewind the master branch to get rid of those ***three*** commits, and keep the changes of those three commits in the working directory. If you want to remove these changes, you can use previous option '--hard'.
 
 ### add
 
@@ -288,3 +288,21 @@ Also, since the two branches are merged, the order in which they are typed into 
 - `git stash clear`
 
     Remove all the stash entries.
+
+### revert
+
+- `git revert {commit SHA}`
+
+    Commits to revert.
+
+- `git revert -n {commit SHA}`
+
+    Usually the command automatically creates some commits with commit log messages stating which commits were reverted. This flag applies the changes necessary to revert the named commits to your working tree and the index, but does not make the commits. In addition, when this option is used, your index does not have to match the HEAD commit. The revert is done against the beginning state of your index.
+
+- `git revert HEAD~3`
+
+    Revert the changes specified by the ***fourth*** last commit in HEAD and create a new commit with the reverted changes.
+
+- `git revert -n master~5..master~2`
+
+    Revert the changes done by commits from the ***fifth*** last commit in master (included) to the ***third*** last commit in master (included), but do not create any commit with the reverted changes. The revert only modifies the working tree and the index.
