@@ -95,6 +95,10 @@
 
     Rewind the master branch to get rid of those ***three*** commits, and keep the changes of those three commits in the working directory. If you want to remove these changes, you can use the above option '--hard'.
 
+- `git reset {mode} {commit}`
+
+    This form resets the current branch **head to \<commit\>** and possibly updates the index (resetting it to the tree of <commit>) and the working tree depending on <mode>. If <mode> is omitted, defaults to "--mixed". "--mixed" resets the index but not the working tree (i.e., the changed files are preserved but not marked for commit) and reports what has not been updated. This is the default action.
+
 ### add
 
 - `git add {filename in the working directory}`
