@@ -117,6 +117,12 @@
 
     clone the whole repository from the url
 
+---
+
+Git has a number of different transfer protocols you can use. The previous example uses the https:// protocol, but you may also see git:// or user@server:path/to/repo.git, which uses the SSH transfer protocol.
+
+---
+
 ### remote
 
 - `git remote`
