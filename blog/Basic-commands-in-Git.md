@@ -93,7 +93,7 @@
 
 - `git reset HEAD~3`
 
-    Rewind the master branch to get rid of those ***three*** commits, and keep the changes of those three commits in the working directory. If you want to remove these changes, you can use previous option '--hard'.
+    Rewind the master branch to get rid of those ***three*** commits, and keep the changes of those three commits in the working directory. If you want to remove these changes, you can use the above option '--hard'.
 
 ### add
 
