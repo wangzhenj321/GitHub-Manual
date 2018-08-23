@@ -295,11 +295,11 @@ Also, since the two branches are merged, the order in which they are typed into 
 
 ### revert
 
-- `git revert {commit SHA}`
+- `git revert {commit}`
 
     Commits to revert.
 
-- `git revert -n {commit SHA}`
+- `git revert -n {commit}`
 
     Usually the command automatically creates some commits with commit log messages stating which commits were reverted. This flag applies the changes necessary to revert the named commits to your working tree and the index, but does not make the commits. In addition, when this option is used, your index does not have to match the HEAD commit. The revert is done against the beginning state of your index.
 
