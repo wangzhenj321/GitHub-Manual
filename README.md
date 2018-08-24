@@ -13,7 +13,7 @@ Basic manual about how to use GitHub
 3. [git clean](blog/git-clean.md)
 4. [git config](blog/git-config.md)
 5. [git merge/rebase/squash](blog/git-merge-rebase-squash.md)
-6. [git rebase ‐i](blog/git-rebase-‐i.md)
+6. [git rebase -i](blog/git-rebase-‐i.md)
 
 ## Q & A
 
