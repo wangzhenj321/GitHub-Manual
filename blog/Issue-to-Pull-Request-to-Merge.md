@@ -10,7 +10,8 @@ The “issue -> pull request -> merge” cycle has been conceptually descried as
 
 ![](../img/Issue-to-Pull-Request-to-Merge/git_basic_workflow.png?raw=true)
 
-#### Table of Contents
+**Table of Contents**
+
 [Basic settings for Git](#basic-settings-for-git)
 
 [Releasing an Issue](#releasing-an-issue)
