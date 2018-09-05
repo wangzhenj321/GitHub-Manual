@@ -3,7 +3,7 @@
 | [gc](#gc) | [help](#help) | [init](#init) | [log](#log) | [status](#status) | [reset](#reset) | [add](#add) | [commit](#commit) | [clone](#clone) | [remote](#remote) |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | [**fetch**](#fetch) | [**pull**](#pull) | [**push**](#push) | [**diff**](#diff) | [**show**](#show) | [**checkout**](#checkout) | [**branch**](#branch) | [**merge**](#merge) | [**tag**](#tag) | [**stash**](#stash) |
-| [**revert**](#revert) |
+| [**revert**](#revert) | [**rm**](#rm) |
 
 ### gc
 
