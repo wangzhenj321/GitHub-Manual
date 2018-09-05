@@ -326,3 +326,11 @@ Also, since the two branches are merged, the order in which they are typed into 
 - `git revert -n master~5..master~2`
 
     Revert the changes done by commits from the ***fifth*** last commit in master (included) to the ***third*** last commit in master (included), but do not create any commit with the reverted changes. The revert only modifies the working tree and the index.
+
+### rm
+
+- `git rm [--cached] [--] <file>…`
+
+    If you just use `rm`, you will need to follow it up with `git add <fileRemoved>`. `git rm` does this in one step.
+
+    You can also use `git rm --cached` which will remove the file from the index (staging it for deletion on the next commit), but keep your copy in the local file system.
