@@ -1,6 +1,6 @@
-# Part 1 `git submodule`
+## Part 1 `git submodule`
 
-## `add <repository> [<path>]`
+### `add <repository> [<path>]`
 
 Add the given repository as a submodule at the given path to the changeset to be committed next to the current project: the current project is termed the "superproject".
 
@@ -10,13 +10,13 @@ The optional argument <path> is the relative location for the cloned submodule t
 
 The given URL is recorded into `.gitmodules` for use by subsequent users cloning the superproject.
 
-## `status [--recursive] [<path>…]`
+### `status [--recursive] [<path>…]`
 
 Show the status of the submodules. This will print the SHA-1 of the currently checked out commit for each submodule, along with the submodule path and the output of *git describe* for the SHA-1.
 
 If `--recursive` is specified, this command will recurse into nested submodules, and show their status as well.
 
-## `update [--remote] [--checkout|--rebase|--merge] [--recursive]`
+### `update [--remote] [--checkout|--rebase|--merge] [--recursive]`
 
 The *update* procedures supported both from the command line as well as through the `submodule.<name>.update` configuration are:
 
@@ -26,9 +26,9 @@ The *update* procedures supported both from the command line as well as through 
 - **custom command**
 - **none**
 
-## `foreach [--recursive] <command>`
+### `foreach [--recursive] <command>`
 
-## Options
+### Options
 
 #### `--remote`
 
@@ -48,12 +48,12 @@ Use this option to integrate changes from the upstream subproject with your subm
 
 This option is only valid for the update command. Merge the commit recorded in the superproject into the current branch of the submodule. If this option is given, the submodule’s HEAD will not be detached. If a merge failure prevents this process, you will have to resolve the resulting conflicts within the submodule with the usual conflict resolution tools. If the key `submodule.$name.update` is set to `merge`, this option is implicit.
 
-## References
+### References
 
 1. [git-submodule](https://git-scm.com/docs/git-submodule)
 
 
-# Part 2 `.gitmodules`
+## Part 2 `.gitmodules`
 
 The `.gitmodules` file, located in the top-level directory of a Git working tree, is a text file with a syntax matching the requirements of `git config`.
 
@@ -73,6 +73,6 @@ In addition, there are a number of optional keys:
 
 A remote branch name for tracking updates in the upstream submodule. If the option is not specified, it defaults to master. A special value of `.` is used to indicate that the name of the branch in the submodule should be the same name as the current branch in the current repository.
 
-## References
+### References
 
 1. [gitmodules](https://git-scm.com/docs/gitmodules)
