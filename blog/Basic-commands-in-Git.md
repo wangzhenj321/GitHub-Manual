@@ -95,7 +95,7 @@
     
     - `git reset -- {filename in the staging area}`
     
-        put the file in the staging area back to the working directory
+        undo the `add`
         
         > `--` This option can be used to separate command-line options from the list of files, (useful when filenames might be mistaken for command-line options).
 
@@ -117,7 +117,11 @@
 
 - `git add {filename in the working directory}`
 
-    add the file from the working directory into the staging area
+    This command updates the index using the current content found in the working tree, to prepare the content staged for the next commit. 
+    
+    **The "index" holds a snapshot of the content of the working tree, and it is this snapshot that is taken as the contents of the next commit.** Thus after making any changes to the working tree, and before running the commit command, you must use the `add` command to add any new or modified files to the index.
+
+    This command can be performed multiple times before a commit. It only adds the content of the specified file(s) at the time the add command is run; if you want subsequent changes included in the next commit, then you must run `git add` again to add the new content to the index.
 
 ### commit
 
