@@ -269,14 +269,6 @@ Also, since the two branches are merged, the order in which they are typed into 
 
     `-a`: specify the tag name; `-m`: specify the tag message
 
-### clean
-
-[git clean](git-clean.md)
-
-- `git clean`
-
-    remove untracked files from the working tree
-
 ### stash
 
 - `git stash save`
