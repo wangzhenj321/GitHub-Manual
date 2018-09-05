@@ -83,21 +83,35 @@
 
 ### reset
 
-- `git reset {filename in the staging area}`
+> The \<tree-ish\>/\<commit\> defaults to HEAD in all forms.
 
-    undo the “git add” : put the file in the staging area back to the working directory
+- `git reset [<tree-ish>] [--] <paths>…`
 
-- `git reset --hard`
+    This form resets the index entries for all \<paths\> to their state at \<tree-ish\>. (It does not affect the working tree or the current branch.)
 
-    Undo the changing operations in the working directory and the staging area. Any changes to tracked files in the working tree since <commit> are discarded.
+    This means that `git reset <paths>` is the opposite of `git add <paths>`.
 
-- `git reset HEAD~3`
+    **Examples**
+    
+    - `git reset -- {filename in the staging area}`
+    
+        put the file in the staging area back to the working directory
+        
+        > `--` This option can be used to separate command-line options from the list of files, (useful when filenames might be mistaken for command-line options).
 
-    Rewind the master branch to get rid of those ***three*** commits, and keep the changes of those three commits in the working directory. If you want to remove these changes, you can use the above option '--hard'.
+- `git reset [<mode>] [<commit>]`
 
-- `git reset {mode} {commit}`
+    This form resets the current branch head to \<commit\> and possibly updates the index (resetting it to the tree of \<commit\>) and the working tree depending on \<mode\>. If \<mode\> is omitted, defaults to "--mixed". "--mixed" resets the index but not the working tree (i.e., the changed files are preserved but not marked for commit) and reports what has not been updated. This is the default action.
 
-    This form resets the current branch **head to \<commit\>** and possibly updates the index (resetting it to the tree of <commit>) and the working tree depending on <mode>. If <mode> is omitted, defaults to "--mixed". "--mixed" resets the index but not the working tree (i.e., the changed files are preserved but not marked for commit) and reports what has not been updated. This is the default action.
+    **Examples**
+    
+    - `git reset --hard`
+    
+        Undo the changing operations in the working directory and the staging area. Any changes to tracked files in the working tree since \<commit\> are discarded.
+
+    - `git reset HEAD~3`
+    
+        Rewind the master branch to get rid of those **three** commits, and keep the changes of those three commits in the working directory. If you want to remove these changes, you can use the above option '--hard'.
 
 ### add
 
