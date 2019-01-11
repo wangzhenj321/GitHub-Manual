@@ -8,13 +8,13 @@ All the information needed to represent the history of a project is stored in fi
 
 Every object consists of three things: **type**, **size** and **content**. The **size** is simply the size of the contents, the **content**s depend on what type of object it is, and there are four different types of objects: **blob**, **tree**, **commit**, and **tag**.
 
-1. **blob** is used to store file data. It is generally a file.
+1. **blob** is used to store file data. ***It is generally a file.***
 
-2. **tree** is basically like a directory. It references a bunch of other trees and/or blobs (i.e. files and sub-directories)
+2. **tree** is basically like a directory. ***It references a bunch of other trees and/or blobs (i.e. files and sub-directories).***
 
-3. **commit** points to a single tree, marking it as what the project looked like at a certain point in time. It contains meta-information about that point in time, such as a timestamp, the author of the changes since the last commit, a pointer to the previous commit(s), etc.
+3. **commit** ***points to a single tree, marking it as what the project looked like at a certain point in time.*** It contains meta-information about that point in time, such as a timestamp, the author of the changes since the last commit, a pointer to the previous commit(s), etc.
 
-4. **tag** is a way to mark a specific commit as special in some way. It is normally used to tag certain commits as specific releases or something along those lines.
+4. **tag** is a way to ***mark a specific commit as special*** in some way. It is normally used to tag certain commits as specific releases or something along those lines.
 
 Almost all of Git is built around manipulating this simple structure of four different object types. It is sort of its own little filesystem that sits on top of your machine's filesystem.
 
@@ -24,4 +24,6 @@ Almost all of Git is built around manipulating this simple structure of four dif
 
 ## Part 2: Index
 
-https://hackernoon.com/understanding-git-index-4821a0765cf
+### References
+
+1. [Understanding Git — Index](https://hackernoon.com/understanding-git-index-4821a0765cf)
