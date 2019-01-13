@@ -44,7 +44,15 @@ There are three areas where file changes can reside from git’s point of view: 
 
 When you work on your project making changes you are dealing with your project’s **working directory**. **This is the project directory on your computer’s filesystem.** All the changes you make will remain in the working directory until you add them to the **staging area** (via `git add` command). The staging area is best described as a preview of your next commit. Meaning, when you do a git commit, git will take the changes that are in the staging area and make the new commit out of those changes. One practical use of the staging area is that it allows you to fine-tune your commits. You can add and remove changes from staging area until you are satisfied with how your next commit will look like, at which point you can do `git commit`. And after you commit your changes they go into `.git/objects` directory where they are saved as *commit*, *blob* and *tree* objects.
 
-Although it is often useful to think of staging area as some real area (or directory) where git stores changes (like it does in `.git/objects` ) this is not entirely true. **Git doesn’t have a dedicated staging directory where it puts some objects representing file changes (blobs). Instead, git has a file called the index that it uses to keep track of the file changes over the three areas: working directory, staging area, and repository.** And when you add changes to your staging area, git updates the information in the index about those changes and creates new blob objects, but puts them in the same `.git/objects` directory with all the other blobs that belong to previous commits. This maybe sounds a bit complicated but actually it isn’t, so let’s go through a typical git workflow example (from `git checkout` to editing working directory to `git add` to `git commit`) to display how git uses the index.
+Although it is often useful to think of staging area as some real area (or directory) where git stores changes (like it does in `.git/objects` ) this is not entirely true. **Git doesn’t have a dedicated staging directory where it puts some objects representing file changes (blobs). Instead, git has a file called the index that it uses to keep track of the file changes over the three areas: working directory, staging area, and repository.** And when you add changes to your staging area, git updates the information in the index about those changes and creates new blob objects, but puts them in the same `.git/objects` directory with all the other blobs that belong to previous commits. This maybe sounds a bit complicated but actually it isn’t, so let’s go through a typical git workflow example to display how git uses the index.
+
+- Step 1: `git checkout`
+
+- Step 2: editing working directory
+
+- Step 3: `git add`
+
+- Step 4: `git commit`
 
 ### `git checkout`
 
