@@ -1,3 +1,27 @@
+**Table of Contents**
+
+[Part 1: Objects](#part-1-objects)
+
+- [The SHA](#the-sha)
+
+- [Objects](#objects)
+
+- [Example](#example)
+
+- [References](#references)
+
+[Part 2: Index]()
+
+- [**Step 1:** `git checkout`](#step-1-git-checkout)
+
+- [**Step 2:** editing working directory](#step-2-editing-working-directory)
+
+- [**Step 3:** `git add`](#step-3-git-add)
+
+- [**Step 4:** `git commit`](#step-4-git-commit)
+
+- [References](#references-1)
+
 ## Part 1: Objects
 
 ### The SHA
