@@ -38,6 +38,138 @@ Almost all of Git is built around manipulating this simple structure of four dif
 
 ## Part 2: Index
 
+There are three areas where file changes can reside from git’s point of view: **working directory**, **staging area**, and **the repository**.
+
+![](../img/objects-and-index/git_index_1.png?raw=true)
+
+When you work on your project making changes you are dealing with your project’s **working directory**. **This is the project directory on your computer’s filesystem.** All the changes you make will remain in the working directory until you add them to the **staging area** (via `git add` command). The staging area is best described as a preview of your next commit. Meaning, when you do a git commit, git will take the changes that are in the staging area and make the new commit out of those changes. One practical use of the staging area is that it allows you to fine-tune your commits. You can add and remove changes from staging area until you are satisfied with how your next commit will look like, at which point you can do `git commit`. And after you commit your changes they go into `.git/objects` directory where they are saved as *commit*, *blob* and *tree* objects.
+
+Although it is often useful to think of staging area as some real area (or directory) where git stores changes (like it does in `.git/objects` ) this is not entirely true. **Git doesn’t have a dedicated staging directory where it puts some objects representing file changes (blobs). Instead, git has a file called the index that it uses to keep track of the file changes over the three areas: working directory, staging area, and repository.** And when you add changes to your staging area, git updates the information in the index about those changes and creates new blob objects, but puts them in the same `.git/objects` directory with all the other blobs that belong to previous commits. This maybe sounds a bit complicated but actually it isn’t, so let’s go through a typical git workflow example (from `git checkout` to editing working directory to `git add` to `git commit`) to display how git uses the index.
+
+### `git checkout`
+
+Let’s say we are on a `master` branch and there is also a `feature` branch in our repository. If we do
+
+```
+git checkout feature
+```
+
+three things are going to happen.
+
+1. git will move the `HEAD` pointer to point to the `feature` ref (branch). To make things more simple we will display only the last commit on the `feature` branch.
+
+    ![](../img/objects-and-index/git_index_2.png?raw=true)
+
+2. git will take the content of the commit that `feature` is pointing to and add it to the index.
+
+    ![](../img/objects-and-index/git_index_3.png?raw=true)
+    
+    As we mentioned earlier index is not a directory but a file, so git is not actually storing objects (blobs) into it. Instead, git is storing information about each file in our repository:
+
+    - `mtime` :  is the time of last update
+    
+    - `file`: name of the file
+    
+    - `wdir`: file version in working directory
+    
+    - `stage`: file version in the index
+    
+    - `repo`:  file version in the repository
+    
+    File versions are marked with checksums (if two files have the same checksum then they have the same content/version).
+
+3. git will make your working directory match the content of the commit that `HEAD` is pointing to (it will recreate the content of your project’s directory using tree and blob objects).
+
+    ![](../img/objects-and-index/git_index_4.png?raw=true)
+
+So, after checkout, every file will have the same version in the working directory, staging area/index, and the repository.
+
+### editing working directory
+
+If we now edit our `index.php` file
+
+![](../img/objects-and-index/git_index_5.png?raw=true)
+
+those changes will affect only our working directory. But if we now run
+
+```
+git status
+```
+
+git will first update the index with the new working directory version for `index.php`
+
+![](../img/objects-and-index/git_index_6.png?raw=true)
+
+and then it will see that `index.php` has different versions in working and staging directory.
+
+![](../img/objects-and-index/git_index_7.png?raw=true)
+
+So, git will tell us
+
+```
+On branch feature
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+modified:   index.php
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+
+that there are changes in our working directory which are not in our staging area (and therefore won’t be included in our next commit at this point).
+
+### `git add`
+
+So let’s add our `index.php` file to the staging area by doing
+
+```
+git add index.php
+```
+
+Two things are going to happen. First, git will create a blob object for our `index.php` file and store it into `.git/objects` directory and second, it will again update the index.
+
+![](../img/objects-and-index/git_index_8.png?raw=true)
+
+If we now do
+
+```
+git status
+```
+
+git will see that `index.php` version in staging area matches the working directory version but doesn’t match the repository version
+
+![](../img/objects-and-index/git_index_9.png?raw=true)
+
+so git will tell us:
+
+```
+On branch feature
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+modified:   index.php
+```
+
+that `index.php` is now staged to be committed.
+
+### `git commit
+
+And now when we commit our changes
+
+```
+git commit -m "Adding some code magic to index.php"
+```
+
+git will:
+
+1. create a new commit object and tree object (and hook them up with the blob object that was already created with `git add`)
+
+2. move the `feature` ref pointer to the new commit
+
+3. update the index.
+
+![](../img/objects-and-index/git_index_10.png?raw=true)
+
+And now our `index.php` file again contains the same versions in all git areas.
+
 ### References
 
 1. [Understanding Git — Index](https://hackernoon.com/understanding-git-index-4821a0765cf)
