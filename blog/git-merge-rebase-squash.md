@@ -8,6 +8,8 @@
 
 [References](#references)
 
+---
+
 Suppose originally there were 3 commits, `A`, `B`, `C`:
 
 ![](../img/git-merge-rebase-squash/git_log.png?raw=true)
