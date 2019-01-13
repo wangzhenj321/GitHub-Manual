@@ -1,7 +1,13 @@
-## Question
-What's the difference between `git merge`, `git rebase` and `git merge --squash`?
+**Table of Contents**
 
-## Answer
+[`git merge`](#git-merge)
+
+[`git rebase`](#git-rebase)
+
+[`git merge --squash`](#git-merge---squash)
+
+[References](#references)
+
 Suppose originally there were 3 commits, `A`, `B`, `C`:
 
 ![](../img/git-merge-rebase-squash/git_log.png?raw=true)
