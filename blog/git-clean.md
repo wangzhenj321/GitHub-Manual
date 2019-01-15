@@ -1,3 +1,10 @@
+**Table of Contents**
+
+[Part 1: What's untracked files?](#part-1-whats-untracked-files)
+
+[Part 2: How to remove untracked files?](#part-2-how-to-remove-untracked-files)
+
+
 # Part 1: What's untracked files?
 
 Remember that each file in your working directory can be in one of two states: **tracked** or **untracked**. 
