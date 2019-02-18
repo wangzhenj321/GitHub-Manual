@@ -292,6 +292,8 @@ Also, since the two branches are merged, the order in which they are typed into 
 - `git stash save`
 
     Save your local modifications to a new stash entry and roll them back to HEAD (in the working tree and in the index). The <message> part is optional and gives the description along with the stashed state.
+    
+    If the --keep-index option is used, all changes already added to the index are left intact.
 
 - `git stash list`
 
