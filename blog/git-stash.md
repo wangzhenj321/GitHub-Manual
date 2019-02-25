@@ -9,12 +9,13 @@ The latest stash you created is stored in **refs/stash**(`.git/refs/stash`); old
 ## Synopsis
 
 - [`git stash list [<options>]`](#git-stash-list-options)
-- `git stash show [<stash>]`
-- `git stash drop [-q|--quiet] [<stash>]`
-- `git stash ( pop | apply ) [--index] [-q|--quiet] [<stash>]`
-- `git stash branch <branchname> [<stash>]`
-- `git stash [save [-p|--patch] [-k|--[no-]keep-index] [-q|--quiet] [-u|--include-untracked] [-a|--all] [<message>]]`
-- `git stash clear`
+- [`git stash show [<stash>]`](#git-stash-show-stash)
+- [`git stash drop [-q|--quiet] [<stash>]`](#git-stash-drop--q--quiet-stash)
+- [`git stash pop [--index] [-q|--quiet] [<stash>]`](#git-stash-pop---index--q--quiet-stash)
+- [`git stash apply [--index] [-q|--quiet] [<stash>]`](#git-stash-apply---index--q--quiet-stash)
+- [`git stash branch <branchname> [<stash>]`](#git-stash-branch-branchname-stash)
+- [`git stash [save [-p|--patch] [-k|--[no-]keep-index] [-q|--quiet] [-u|--include-untracked] [-a|--all] [<message>]]`](#git-stash-save--p--patch--k--no-keep-index--q--quiet--u--include-untracked--a--all-message)
+- [`git stash clear`](#git-stash-clear)
 
 ## Options
 
@@ -63,8 +64,18 @@ When no <stash> is given, stash@{0} is assumed, otherwise <stash> must be a refe
 
 ### `git stash apply [--index] [-q|--quiet] [<stash>]`
 
-#### `git stash branch <branchname> [<stash>]`
-#### `git stash [save [-p|--patch] [-k|--[no-]keep-index] [-q|--quiet] [-u|--include-untracked] [-a|--all] [<message>]]`
-#### `git stash clear`
-#### `git stash create [<message>]`
-#### `git stash store [-m|--message <message>] [-q|--quiet] <commit>`
+Like `pop`, but do not remove the state from the stash list. Unlike `pop`, `<stash>` may be any commit that looks like a commit created by `stash save` or `stash create`.
+
+### `git stash [save [-p|--patch] [-k|--[no-]keep-index] [-q|--quiet] [-u|--include-untracked] [-a|--all] [<message>]]`
+
+Save your local modifications to a new stash, and run `git reset --hard` to revert them. The `<message>` part is optional and gives the description along with the stashed state. For quickly making a snapshot, you can omit both "save" and `<message>`, but giving only `<message>` does not trigger this action to prevent a misspelled subcommand from making an unwanted stash.
+
+#### `--keep-index`
+
+> If the `--keep-index` option is used, all changes already added to the index are left intact.
+
+![](../img/git-stash/stash_save_with_keep_index.png?raw=true)
+
+### `git stash clear`
+
+Remove all the stashed states. Note that those states will then be subject to pruning, and may be impossible to recover (see Examples below for a possible strategy).
