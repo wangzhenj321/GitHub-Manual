@@ -47,7 +47,7 @@ If the `--index` option is used, then tries to reinstate not only the working tr
 
 When no <stash> is given, stash@{0} is assumed, otherwise <stash> must be a reference of the form stash@{<revision>}.
 
-**`--index`**
+#### `--index`
 
 1. Create a stash including both working tree's changes and index's ones.
 
