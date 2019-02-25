@@ -8,7 +8,7 @@ The latest stash you created is stored in **refs/stash**(`.git/refs/stash`); old
 
 ## Synopsis
 
-- `git stash list [<options>]`
+- [`git stash list [<options>]`](#git-stash-list-options)
 - `git stash show [<stash>]`
 - `git stash drop [-q|--quiet] [<stash>]`
 - `git stash ( pop | apply ) [--index] [-q|--quiet] [<stash>]`
