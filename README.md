@@ -3,8 +3,9 @@ Basic manual about how to use GitHub
 
 ## Basic
 
-1. [Issue to Pull Request to Merge](blog/Issue-to-Pull-Request-to-Merge.md)
-2. [How to Use Git and GitHub](blog/How-to-Use-Git-and-GitHub.md)
+1. [How to Use Git and GitHub](blog/How-to-Use-Git-and-GitHub.md)
+2. [Issue to Pull Request to Merge](blog/Issue-to-Pull-Request-to-Merge.md)
+3. [Objects and Index](blog/objects-and-index.md)
 
 ## Commands
 
@@ -15,6 +16,7 @@ Basic manual about how to use GitHub
 5. [git merge/rebase/squash](blog/git-merge-rebase-squash.md)
 6. [git rebase -i](blog/git-rebase-‐i.md)
 7. [git submodule and .gitmodules](blog/git-submodule-and-gitmodules.md)
+8. [git stash](blog/git-stash.md)
 
 ## Q & A
 
@@ -27,4 +29,3 @@ Basic manual about how to use GitHub
 7. [Upload local repo to GitHub](blog/Upload-local-repo-to-GitHub.md)
 8. [Use SSH over HTTPS port(443)](blog/Use-SSH-over-HTTPS-port-(443).md)
 9. [gitignore is not working](blog/gitignore-is-not-working.md)
-10. [objects and index](blog/objects-and-index.md)
