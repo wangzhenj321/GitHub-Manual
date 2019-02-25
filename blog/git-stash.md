@@ -9,12 +9,17 @@ The latest stash you created is stored in **refs/stash**(`.git/refs/stash`); old
 ## Synopsis
 
 - [`git stash list [<options>]`](#git-stash-list-options)
+
 - [`git stash show [<stash>]`](#git-stash-show-stash)
+
 - [`git stash drop [-q|--quiet] [<stash>]`](#git-stash-drop--q--quiet-stash)
+
 - [`git stash pop [--index] [-q|--quiet] [<stash>]`](#git-stash-pop---index--q--quiet-stash)
+
 - [`git stash apply [--index] [-q|--quiet] [<stash>]`](#git-stash-apply---index--q--quiet-stash)
-- [`git stash branch <branchname> [<stash>]`](#git-stash-branch-branchname-stash)
+
 - [`git stash [save [-p|--patch] [-k|--[no-]keep-index] [-q|--quiet] [-u|--include-untracked] [-a|--all] [<message>]]`](#git-stash-save--p--patch--k--no-keep-index--q--quiet--u--include-untracked--a--all-message)
+
 - [`git stash clear`](#git-stash-clear)
 
 ## Options
