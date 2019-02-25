@@ -57,7 +57,7 @@ When no <stash> is given, stash@{0} is assumed, otherwise <stash> must be a refe
 
 1. Create a stash including both working tree's changes and index's ones.
 
-    ![](../img/git-stash/stash_save_with_index.png?raw=true)
+    ![](../img/git-stash/stash_save_include_index.png?raw=true)
 
 2. Pop the stash without `--index` option.
 
