@@ -2,8 +2,8 @@
 
 | [gc](#gc) | [help](#help) | [init](#init) | [log](#log) | [status](#status) | [reset](#reset) | [add](#add) | [commit](#commit) | [clone](#clone) | [remote](#remote) |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| [**fetch**](#fetch) | [**pull**](#pull) | [**push**](#push) | [**diff**](#diff) | [**show**](#show) | [**checkout**](#checkout) | [**branch**](#branch) | [**merge**](#merge) | [**tag**](#tag) | [**stash**](#stash) |
-| [**revert**](#revert) | [**rm**](#rm) |
+| [**fetch**](#fetch) | [**pull**](#pull) | [**push**](#push) | [**diff**](#diff) | [**show**](#show) | [**checkout**](#checkout) | [**branch**](#branch) | [**merge**](#merge) | [**tag**](#tag) | [**revert**](#revert) |
+| [**rm**](#rm) |
 
 ### gc
 
@@ -286,30 +286,6 @@ Also, since the two branches are merged, the order in which they are typed into 
 - `git tag -a {tag name} -m {“tag message”} {commit ID}`
 
     `-a`: specify the tag name; `-m`: specify the tag message
-
-### stash
-
-- `git stash save`
-
-    Save your local modifications to a new stash entry and roll them back to HEAD (in the working tree and in the index). The <message> part is optional and gives the description along with the stashed state.
-    
-    > If the --keep-index option is used, all changes already added to the index are left intact.
-
-- `git stash list`
-
-    List the stash entries that you currently have.
-
-- `git stash pop`
-
-    Remove a single stashed state from the stash list and apply it on top of the current working tree state, i.e., do the inverse operation of `git stash save`. The working directory must match the index.
-
-- `git stash apply`
-
-    Like pop, but do not remove the state from the stash list.
-
-- `git stash clear`
-
-    Remove all the stash entries.
 
 ### revert
 
