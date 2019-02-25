@@ -43,10 +43,23 @@ Remove a single stashed state from the stash list and apply it on top of the cur
 
 **Applying the state can fail with conflicts; in this case, it is not removed from the stash list. You need to resolve the conflicts by hand and call `git stash drop` manually afterwards.**
 
-If the `--index` option is used, then tries to reinstate not only the working tree’s changes, but also the index’s ones. However, this can fail,
-when you have conflicts (which are stored in the index, where you therefore can no longer apply the changes as they were originally).
+If the `--index` option is used, then tries to reinstate not only the working tree’s changes, but also the index’s ones. However, this can fail, when you have conflicts (which are stored in the index, where you therefore can no longer apply the changes as they were originally).
 
 When no <stash> is given, stash@{0} is assumed, otherwise <stash> must be a reference of the form stash@{<revision>}.
+
+**`--index`**
+
+1. Create a stash including both working tree's changes and index's ones.
+
+    ![](../img/git-stash/stash_save_with_index.png?raw=true)
+
+2. Pop the stash without `--index` option.
+
+    ![](../img/git-stash/stash_pop_without_index.png?raw=true)
+
+3. Pop the stash with `--index` option.
+
+    ![](../img/git-stash/stash_pop_with_index.png?raw=true)
 
 ### `git stash apply [--index] [-q|--quiet] [<stash>]`
 
