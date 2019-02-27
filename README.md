@@ -8,7 +8,7 @@ Basic manual about how to use GitHub
 
 ## Commands
 
-1. [Basic commands in Git](blog/Basic-commands.md)
+1. [Basic commands](blog/Basic-commands.md)
 2. [git cherry-pick](blog/git-cherry‐pick.md)
 3. [git clean](blog/git-clean.md)
 4. [git config](blog/git-config.md)
