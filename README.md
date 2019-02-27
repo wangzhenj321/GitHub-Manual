@@ -29,3 +29,6 @@ Basic manual about how to use GitHub
 7. [Upload local repo to GitHub](blog/Upload-local-repo-to-GitHub.md)
 8. [Use SSH over HTTPS port(443)](blog/Use-SSH-over-HTTPS-port-(443).md)
 9. [gitignore is not working](blog/gitignore-is-not-working.md)
+
+## References
+1. [How to Use Git and GitHub on Udacity](https://www.udacity.com/course/how-to-use-git-and-github--ud775)
