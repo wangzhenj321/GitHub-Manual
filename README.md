@@ -30,4 +30,6 @@ Basic manual about how to use GitHub
 9. [gitignore is not working](blog/gitignore-is-not-working.md)
 
 ## References
-1. [How to Use Git and GitHub on Udacity](https://www.udacity.com/course/how-to-use-git-and-github--ud775)
+
+1. [git doc](https://git-scm.com/doc)
+2. [How to Use Git and GitHub on Udacity](https://www.udacity.com/course/how-to-use-git-and-github--ud775)
