@@ -3,7 +3,7 @@ Basic manual about how to use GitHub
 
 ## Basic
 
-1. [Issue to Pull Request to Merge](blog/Issue-to-Pull-Request-to-Merge.md)
+1. [From Issue to Pull Request to Merge](blog/From-Issue-to-Pull-Request-to-Merge.md)
 2. [Objects and Index](blog/objects-and-index.md)
 
 ## Commands
