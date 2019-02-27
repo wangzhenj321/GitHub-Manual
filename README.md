@@ -3,9 +3,8 @@ Basic manual about how to use GitHub
 
 ## Basic
 
-1. [How to Use Git and GitHub](blog/How-to-Use-Git-and-GitHub.md)
-2. [Issue to Pull Request to Merge](blog/Issue-to-Pull-Request-to-Merge.md)
-3. [Objects and Index](blog/objects-and-index.md)
+1. [Issue to Pull Request to Merge](blog/Issue-to-Pull-Request-to-Merge.md)
+2. [Objects and Index](blog/objects-and-index.md)
 
 ## Commands
 
