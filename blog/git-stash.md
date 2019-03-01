@@ -79,6 +79,10 @@ Save your local modifications to a new stash, and run `git reset --hard` to reve
 
 > If the `--keep-index` option is used, all changes already added to the index are left intact.
 
+> Refer to [Is "git stash save --keep-index" explained correctly in Chapter 7?](https://github.com/progit/progit2/issues/822)
+>
+> `--keep-index` has no effect on what gets captured in the stash, it simply leaves staged content in the index (and, of course, the working tree).
+
 ![](../img/git-stash/stash_save_with_keep_index.png?raw=true)
 
 ### `git stash clear`
