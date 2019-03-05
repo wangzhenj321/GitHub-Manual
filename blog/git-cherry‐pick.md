@@ -1,12 +1,26 @@
 **Table of Contents**
 
-**Part 1**
+**[Part 1](#part-1)**
 
-- 
+- [Question](#question)
 
-**Part 2**
+- [Answer](#answer)
 
-- 
+- [References](#references)
+
+**[Part 2](#part-2)**
+
+- [Rebasing and Cherry-Picking Workflows](#rebasing-and-cherry-picking-workflows)
+
+- [`git cherry-pick`](#git-cherry-pick)
+
+    - [Description](#description)
+    
+    - [Synopsis](#synopsis)
+    
+    - [Options](#options)
+    
+    - [Examples](#examples)
 
 # Part 1
 
