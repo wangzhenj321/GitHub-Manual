@@ -1,6 +1,16 @@
 **Table of Contents**
 
+- [What’s Markdown?](#whats-markdown)
 
+- [Basic Syntax](#basic-syntax)
+
+- [Extended Syntax](#extended-syntax)
+
+- [CommonMark](#commonmark)
+
+- [GitHub Flavored Markdown Spec](#github-flavored-markdown-spec)
+
+- [Emoji Markup](#emoji-markup)
 
 ## [What’s Markdown?](https://www.markdownguide.org/getting-started)
 
