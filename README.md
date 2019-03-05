@@ -1,5 +1,5 @@
 # GitHub-Manual
-Basic manual about how to use GitHub
+Basic manual about how to use GitHub and Git
 
 ## Basic
 
