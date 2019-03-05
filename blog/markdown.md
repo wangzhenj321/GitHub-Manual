@@ -86,6 +86,27 @@
         My favorite search engine is [Duck Duck Go](https://duckduckgo.com "The best search engine for privacy").
         ```
     
+    - **URLs and Email Addresses**
+    
+        To quickly turn a URL or email address into a link, enclose it in angle brackets.
+    
+    - **Formatting Links**
+    
+        To emphasize links, add asterisks before and after the brackets and parentheses.
+    
+    - :question: **Reference-style Links**
+
+- **Images**
+
+    To add an image, add an exclamation mark (`!`), followed by alt text in brackets, and the path or URL to the image asset in parentheses. You can optionally add a title after the URL in the parentheses.
+    
+    - **Linking Images**
+    
+        To add a link to an image, enclose the Markdown for the image in brackets, and then add the link in parentheses.
+
+- **Escaping Characters**
+
+    To display a literal character that would otherwise be used to format text in a Markdown document, add a backslash (`\`) in front of the character.
 
 ## [Extended Syntax](https://www.markdownguide.org/extended-syntax)
 
