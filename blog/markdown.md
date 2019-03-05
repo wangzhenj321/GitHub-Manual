@@ -60,15 +60,15 @@
 
 - **Code**
 
-    To denote a word or phrase as code, enclose it in tick marks (`).
+    To denote a word or phrase as code, enclose it in tick marks (\`).
     
     - **Escaping Tick Marks**
     
-        If the word or phrase you want to denote as code includes one or more tick marks, you can escape it by enclosing the word or phrase in double tick marks (``).
+        If the word or phrase you want to denote as code includes one or more tick marks, you can escape it by enclosing the word or phrase in double tick marks (\`\`).
     
     - **Code Blocks**
     
-        To create code blocks, indent every line of the block by at least four spaces or one tab.
+        > **To create code blocks, indent every line of the block by at least four spaces or one tab.**
 
 - **Horizontal Rules**
 
@@ -106,7 +106,7 @@
 
 - **Escaping Characters**
 
-    To display a literal character that would otherwise be used to format text in a Markdown document, add a backslash (`\\`) in front of the character.
+    To display a literal character that would otherwise be used to format text in a Markdown document, add a backslash (`\`) in front of the character.
 
 ## [Extended Syntax](https://www.markdownguide.org/extended-syntax)
 
@@ -131,5 +131,68 @@ Extended syntax isn’t available in all Markdown applications. You’ll need to
 - **Fenced Code Blocks**
 
     The basic Markdown syntax allows you to create code blocks by indenting lines by four spaces or one tab. If you find that inconvenient, try using fenced code blocks. Depending on your Markdown processor or editor, you’ll use three tick marks (\`\`\`) or three tildes (`~~~`) on the lines before and after the code block.
+    
+    - **Syntax Highlighting**
+    
+        Many Markdown processors support syntax highlighting for fenced code blocks. This feature allows you to add color highlighting for whatever language your code was written in. To add syntax highlighting, specify a language next to the tick marks before the fenced code block.
+
+- **Footnotes**
+
+    Footnotes allow you to add notes and references without cluttering the body of the document. When you create a footnote, a superscript number with a link appears where you added the footnote reference.
+    
+    ```
+    Here's a simple footnote,[^1] and here's a longer one.[^bignote]
+
+    [^1]: This is the first footnote.
+
+    [^bignote]: Here's one with multiple paragraphs and code.
+
+        Indent paragraphs to include them in the footnote.
+
+        `{ my code }`
+
+        Add as many paragraphs as you like.
+    ```
+
+- **Heading IDs**
+
+    Many Markdown processors support custom IDs for headings — some Markdown processors automatically add them. Adding custom IDs allows you to link directly to headings and modify them with CSS. To add a custom heading ID, enclose the custom ID in curly braces on the same line as the heading
+    
+    ```
+    ### My Great Heading {#custom-id}
+    ```
+    
+    - **Linking to Heading IDs**
+    
+        You can link to headings with custom IDs in the file by creating a standard link with a number sign (#) followed by the custom heading ID.
+
+- **Definition Lists**
+
+    Some Markdown processors allow you to create definition lists of terms and their corresponding definitions. To create a definition list, type the term on the first line. On the next line, type a colon followed by a space and the definition.
+    
+    ```
+    First Term
+    : This is the definition of the first term.
+
+    Second Term
+    : This is one definition of the second term.
+    : This is another definition of the second term.
+    ```
+
+- **Strikethrough**
+
+    You can “strikethrough” words by putting a horizontal line through the center of them. To strikethrough words, use two tilde symbols (`~~`) before and after the words.
+
+- **Task Lists**
+
+    Task lists allow you to create a list of items with checkboxes. In Markdown applications that support task lists, checkboxes will be displayed next to the content. To create a task list, add dashes (`-`) and brackets with a space (`[ ]`) in front of task list items. To select a checkbox, add an `x` in between the brackets (`[x]`).
+
+- **Automatic URL Linking**
+
+    Many Markdown processors automatically turn URLs into links.
+    
+    - **Disabling Automatic URL Linking**
+    
+        If you don’t want a URL to be automatically linked, you can remove the link by denoting the URL as code with tick marks.
 
 ## [Emoji Markup](https://gist.github.com/rxaviers/7360908)
