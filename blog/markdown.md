@@ -16,15 +16,15 @@
 
     - **Bold**
     
-        To bold text, add two asterisks or underscores before and after a word or phrase. To bold the middle of a word for emphasis, add two asterisks without spaces around the letters.
+        To bold text, add **two** asterisks or underscores before and after a word or phrase. To bold the middle of a word for emphasis, add two asterisks without spaces around the letters.
     
     - **Italic**
     
-        To italicize text, add one asterisk or underscore before and after a word or phrase. To italicize the middle of a word for emphasis, add one asterisk without spaces around the letters.
+        To italicize text, add **one** asterisk or underscore before and after a word or phrase. To italicize the middle of a word for emphasis, add one asterisk without spaces around the letters.
     
     - **Bold and Italic**
     
-        To emphasize text with bold and italics at the same time, add three asterisks or underscores before and after a word or phrase.
+        To emphasize text with bold and italics at the same time, add **three** asterisks or underscores before and after a word or phrase.
 
 - **Blockquotes**
 
