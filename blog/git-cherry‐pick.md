@@ -52,3 +52,41 @@ This pulls the same change introduced in e43a6, but ***you get a new commit SHA-
 ![](../img/git-cherry-pick/cherry-pick-2.png?raw=true)
 
 Now you can remove your topic branch and drop the commits you didn’t want to pull in.
+
+## `git cherry-pick`
+
+### Description
+
+Given one or more existing commits, apply the change each one introduces, recording a new commit for each. **This requires your working tree to be clean (no modifications from the HEAD commit).**
+
+### Synopsis
+
+- `git cherry-pick [--edit] [-n] [-m parent-number] [-s] [-x] [--ff] [-S[<keyid>]] <commit>...`
+
+- `git cherry-pick --continue`
+
+- `git cherry-pick --abort`
+
+### Options
+
+- `<commit>...`
+
+    Commits to cherry-pick.
+
+- `-e, --edit`
+
+    With this option, `git cherry-pick` will let you edit the commit message prior to committing.
+
+### Examples
+
+1. `git cherry-pick master`
+
+    Apply the change introduced by the commit at the tip of the master branch and create a new commit with this change.
+
+2. `git cherry-pick ..master`, `git cherry-pick ^HEAD master`
+
+    Apply the changes introduced by all commits that are ancestors of master but not of HEAD to produce new commits.
+
+3. `git cherry-pick master~4 master~2`
+
+    Apply the changes introduced by the fifth and third last commits pointed to by master and create 2 new commits with these changes.
