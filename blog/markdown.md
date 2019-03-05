@@ -1,3 +1,11 @@
+**Table of Contents**
+
+
+
+## [What’s Markdown?](https://www.markdownguide.org/getting-started)
+
+**Markdown** is a lightweight markup language that you can use to add formatting elements to plaintext text documents. Created by John Gruber in 2004, **Markdown** is now one of the world’s most popular markup languages.
+
 ## [Basic Syntax](https://www.markdownguide.org/basic-syntax)
 
 - **Headings**
@@ -112,6 +120,13 @@
 
 Extended syntax isn’t available in all Markdown applications. You’ll need to check whether or not the **lightweight markup language** your application is using supports extended syntax. If it doesn’t, it may still be possible to enable extensions in your **Markdown processor**.
 
+> Many of the most popular Markdown applications use one of the following lightweight markup languages:
+> 
+> - CommonMark
+> - GitHub Flavored Markdown (GFM)
+> - Markdown Extra
+> - MultiMarkdown
+
 - **Tables**
 
     To add a table, use three or more hyphens (`---`) to create each column’s header, and use pipes (`|`) to separate each column. You can optionally add pipes on either end of the table.
@@ -194,5 +209,19 @@ Extended syntax isn’t available in all Markdown applications. You’ll need to
     - **Disabling Automatic URL Linking**
     
         If you don’t want a URL to be automatically linked, you can remove the link by denoting the URL as code with tick marks.
+
+## [CommonMark](https://commonmark.org/)
+
+It’s a plain text format for writing structured documents, based on formatting conventions from email and usenet.
+
+## [GitHub Flavored Markdown Spec](https://github.github.com/gfm/)
+
+**GitHub Flavored Markdown**, often shortened as **GFM**, is the dialect of Markdown that is currently supported for user content on GitHub.com and GitHub Enterprise.
+
+This formal specification, based on the **CommonMark Spec**, defines the syntax and semantics of this dialect.
+
+**GFM** is a strict superset of **CommonMark**. All the features which are supported in GitHub user content and that are not specified on the original CommonMark Spec are hence known as extensions, and highlighted as such.
+
+While **GFM** supports a wide range of inputs, it’s worth noting that GitHub.com and GitHub Enterprise perform additional post-processing and sanitization after GFM is converted to HTML to ensure security and consistency of the website.
 
 ## [Emoji Markup](https://gist.github.com/rxaviers/7360908)
