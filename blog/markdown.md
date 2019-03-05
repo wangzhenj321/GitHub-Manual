@@ -68,7 +68,7 @@
     
     - **Code Blocks**
     
-        To create code blocks, indent every line of the block by at least four spaces or one tab (or ```).
+        To create code blocks, indent every line of the block by at least four spaces or one tab.
 
 - **Horizontal Rules**
 
@@ -109,5 +109,19 @@
     To display a literal character that would otherwise be used to format text in a Markdown document, add a backslash (`\`) in front of the character.
 
 ## [Extended Syntax](https://www.markdownguide.org/extended-syntax)
+
+Extended syntax isn’t available in all Markdown applications. You’ll need to check whether or not the **[lightweight markup language](https://www.markdownguide.org/extended-syntax#lightweight-markup-languages)** your application is using supports extended syntax. If it doesn’t, it may still be possible to enable extensions in your **[Markdown processor](https://www.markdownguide.org/extended-syntax#markdown-processors)**.
+
+- **[Tables](https://www.markdownguide.org/extended-syntax#tables)**
+
+    To add a table, use three or more hyphens (`---`) to create each column’s header, and use pipes (|) to separate each column. You can optionally add pipes on either end of the table.
+    
+    - **[Alignment](https://www.markdownguide.org/extended-syntax#alignment)**
+    
+        You can align text in the columns to the left, right, or center by adding a colon (`:`) to the left, right, or on both side of the hyphens within the header row.
+    
+    - **[Formatting Text in Tables](https://www.markdownguide.org/extended-syntax#formatting-text-in-tables)**
+    
+        You can format the text within tables. For example, you can add links, code, and emphasis. You can’t add headings, blockquotes, lists, horizontal rules, images, or HTML tags.
 
 ## [Emoji Markup](https://gist.github.com/rxaviers/7360908)
