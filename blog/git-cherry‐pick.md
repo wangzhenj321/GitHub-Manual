@@ -1,3 +1,13 @@
+**Table of Contents**
+
+**Part 1**
+
+- 
+
+**Part 2**
+
+- 
+
 # Part 1
 
 ## Question
@@ -20,9 +30,11 @@ Lastly, there are some [good comments on the cherry-picking vs merging vs rebasi
 
 # Part 2
 
+## Rebasing and Cherry-Picking Workflows
+
 Other maintainers prefer to rebase or cherry-pick contributed work on top of their master branch, rather than merging it in, to keep a mostly linear history. When you have work in a topic branch and have determined that you want to integrate it, you move to that branch and run the rebase command to rebuild the changes on top of your current `master` (or `develop`, and so on) branch. If that works well, you can fast-forward your master branch, and you’ll end up with a linear project history.
 
-The other way to move introduced work from one branch to another is to cherry-pick it. A cherry-pick in Git is like a rebase for a single commit. ***It takes the patch that was introduced in a commit and tries to reapply it on the branch you’re currently on. This is useful if you have a number of commits on a topic branch and you want to integrate only one of them, or if you only have one commit on a topic branch and you’d prefer to cherry-pick it rather than run rebase.*** For example, suppose you have a project that looks like this:
+The other way to move introduced work from one branch to another is to cherry-pick it. **A cherry-pick in Git is like a rebase for a single commit. It takes the patch that was introduced in a commit and tries to reapply it on the branch you’re currently on.** This is useful if you have a number of commits on a topic branch and you want to integrate only one of them, or if you only have one commit on a topic branch and you’d prefer to cherry-pick it rather than run rebase. For example, suppose you have a project that looks like this:
 
 ![](../img/git-cherry-pick/cherry-pick-1.png?raw=true)
 
