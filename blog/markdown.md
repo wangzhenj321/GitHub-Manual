@@ -106,22 +106,30 @@
 
 - **Escaping Characters**
 
-    To display a literal character that would otherwise be used to format text in a Markdown document, add a backslash (`\`) in front of the character.
+    To display a literal character that would otherwise be used to format text in a Markdown document, add a backslash (`\\`) in front of the character.
 
 ## [Extended Syntax](https://www.markdownguide.org/extended-syntax)
 
-Extended syntax isn’t available in all Markdown applications. You’ll need to check whether or not the **[lightweight markup language](https://www.markdownguide.org/extended-syntax#lightweight-markup-languages)** your application is using supports extended syntax. If it doesn’t, it may still be possible to enable extensions in your **[Markdown processor](https://www.markdownguide.org/extended-syntax#markdown-processors)**.
+Extended syntax isn’t available in all Markdown applications. You’ll need to check whether or not the **lightweight markup language** your application is using supports extended syntax. If it doesn’t, it may still be possible to enable extensions in your **Markdown processor**.
 
-- **[Tables](https://www.markdownguide.org/extended-syntax#tables)**
+- **Tables**
 
-    To add a table, use three or more hyphens (`---`) to create each column’s header, and use pipes (|) to separate each column. You can optionally add pipes on either end of the table.
+    To add a table, use three or more hyphens (`---`) to create each column’s header, and use pipes (`|`) to separate each column. You can optionally add pipes on either end of the table.
     
-    - **[Alignment](https://www.markdownguide.org/extended-syntax#alignment)**
+    - **Alignment**
     
         You can align text in the columns to the left, right, or center by adding a colon (`:`) to the left, right, or on both side of the hyphens within the header row.
     
-    - **[Formatting Text in Tables](https://www.markdownguide.org/extended-syntax#formatting-text-in-tables)**
+    - **Formatting Text in Tables**
     
         You can format the text within tables. For example, you can add links, code, and emphasis. You can’t add headings, blockquotes, lists, horizontal rules, images, or HTML tags.
+    
+    - **Escaping Pipe Characters in Tables**
+    
+        You can display a pipe (`|`) character in a table by using its HTML character code (`&#124;`).
+
+- **Fenced Code Blocks**
+
+    The basic Markdown syntax allows you to create code blocks by indenting lines by four spaces or one tab. If you find that inconvenient, try using fenced code blocks. Depending on your Markdown processor or editor, you’ll use three tick marks (\`\`\`) or three tildes (`~~~`) on the lines before and after the code block.
 
 ## [Emoji Markup](https://gist.github.com/rxaviers/7360908)
