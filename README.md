@@ -5,6 +5,7 @@ Basic manual about how to use GitHub and Git
 
 1. [From Issue to Pull Request to Merge](blog/From-Issue-to-Pull-Request-to-Merge.md)
 2. [Objects and Index](blog/objects-and-index.md)
+3. [Detached HEAD](blog/Detached-HEAD.md)
 
 ## Commands
 
@@ -21,13 +22,12 @@ Basic manual about how to use GitHub and Git
 
 1. [Cache your GitHub password](blog/Cache-your-GitHub-password.md)
 2. [Clean up unused git branches](blog/Clean-up-unused-git-branches.md)
-3. [Detached HEAD](blog/Detached-HEAD.md)
-4. [Rename a directory](blog/Rename-a-directory.md)
-5. [Table of content in GitHub wiki](blog/Table-of-content-in-GitHub-wiki.md)
-6. [Update a forked repo](blog/Update-a-forked-repo.md)
-7. [Upload local repo to GitHub](blog/Upload-local-repo-to-GitHub.md)
-8. [Use SSH over HTTPS port(443)](blog/Use-SSH-over-HTTPS-port-(443).md)
-9. [gitignore is not working](blog/gitignore-is-not-working.md)
+3. [Rename a directory](blog/Rename-a-directory.md)
+4. [Table of content in GitHub wiki](blog/Table-of-content-in-GitHub-wiki.md)
+5. [Update a forked repo](blog/Update-a-forked-repo.md)
+6. [Upload local repo to GitHub](blog/Upload-local-repo-to-GitHub.md)
+7. [Use SSH over HTTPS port(443)](blog/Use-SSH-over-HTTPS-port-(443).md)
+8. [gitignore is not working](blog/gitignore-is-not-working.md)
 
 ## Tools
 
