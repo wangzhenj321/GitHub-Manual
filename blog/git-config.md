@@ -1,42 +1,105 @@
-`git config`能对`git`客户端进行全面的配置和定义，每个用户都会有属于自己的不同的config选项。
+## Description
 
-`config`有三个级别:
-- system 表示系统的全局配置
-- global 表示用户的全局配置
-- local  表示仓库的配置
+You can query/set/replace/unset options with this command.
 
-从名称上来看，作用域从大到小，但优先级是从低到高，越贴近仓库的优先级越高。当配置项出现冲突时，优先级高的生效。
+When **reading**, the values are read from the system, global and repository local configuration files by default, and options `--system`, `--global`, `--local` and `--file <filename>` can be used to tell the command to read from only that location.
 
-使用`list`参数可以看到全部配置项，如果需要查看作用域的配置，再加上具体作用域的参数，比如
+When **writing**, the new value is written to the repository local configuration file by default, and options `--system`, `--global`, `--file <filename>` can be used to tell the command to write to that location (you can say `--local` but that is the default).
 
-```
-$ git config --list --global    // 查看当前用户的global配置
-```
+This command will fail with non-zero status upon error
 
-`config`编辑有个很简单的办法，不需要记住那么多参数:
+## Synopsis
 
-```
-$ git config --global -e    // 编辑当前用户的global配置
-```
+- `git config [<file-option>] [type] [-z|--null] name [value [value_regex]]`
 
-如果需要更改其它作用域的参数，更换global为指定的即可，如果不加这个参数，默认是编辑当前仓库的config文件。这些不同作用域的配置的具体配置文件有哪些呢？ 可以通过`git help config`命令打开帮助查看，在FILES章节，但官方的帮助文档描述的并不详尽，不同OS的`git`客户端都有一些个性化的内容。
+- `git config [<file-option>] [type] [-z|--null] --get name [value_regex]`
 
-查看所有配置项时，可以通过添加`--show-origin`参数显示具体配置项属于哪个文件，你会发现config文件不是3个是4个。
+- `git config [<file-option>] [type] [-z|--null] --get-all name [value_regex]`
+
+- `git config [<file-option>] --unset name [value_regex]`
+
+- `git config [<file-option>] --unset-all name [value_regex]`
+
+- `git config [<file-option>] [-z|--null] [--name-only] -l | --list`
+
+- `git config [<file-option>] -e | --edit`
+
+## Options
+
+- `--get`
+
+    Get the value for a given key (optionally filtered by a regex matching the value). Returns error code 1 if the key was not found and the last value if multiple key values were found.
+
+- `--get-all`
+
+    Like get, but does not fail if the number of values for the key is not exactly one.
+
+- `<file-option>`
+
+    - `--system`
+    
+        - For writing options: write to system-wide `$(prefix)/etc/gitconfig` rather than the repository `.git/config`.
+        
+        - For reading options: read only from system-wide `$(prefix)/etc/gitconfig` rather than from all available files.
+    
+    - `--global`
+    
+        - For writing options: write to global `~/.gitconfig` file rather than the repository `.git/config`, write to `$XDG_CONFIG_HOME/git/config` file if this file exists and the `~/.gitconfig` file doesn’t.
+
+        - For reading options: read only from global `~/.gitconfig` and from `$XDG_CONFIG_HOME/git/config` rather than from all available files.
+    
+    - `--local`
+    
+        - For writing options: write to the repository `.git/config` file. This is the default behavior.
+
+        - For reading options: read only from the repository `.git/config` rather than from all available files.
+    
+    - `--file config-file`
+    
+        Use the given config file instead of the one specified by `GIT_CONFIG`.
+    
+    - `--blob blob`
+    
+        Similar to `--file` but use the given blob instead of a file.
+
+- `--unset`
+
+    Remove the line matching the key from config file.
+
+- `--unset-all`
+
+    Remove all lines matching the key from config file.
+
+- `-l, --list`
+
+    List all variables set in config file, along with their values.
+
+- `-e, --edit`
+
+    Opens an editor to modify the specified config file; either `--system`, `--global`, or repository (default).
+
+## Files
+
+If not set explicitly with `--file`, there are four files where `git config` will search for configuration options:
 
 ![](../img/git-config/git_config_list_show_origin.png?raw=true)
 
-### system
+1. `$(prefix)/etc/gitconfig` :left_right_arrow: `--system`
 
-这个文件一般都在`/etc/gitconfig`，优先级最低，对于windows用户在`git bash`里的路径是/mingw64/etc/gitconfig。
+    System-wide configuration file.
 
-### global
-文件在~/.gitconfig这是用户使用最多的config文件，大多数的配置项都在这里配置。但这个作用域的配置文件有两个，另外一个是官方所说Second user-specific configuration file路径在$XDG_CONFIG_HOME/git/config，对于windows用户来说是%ProgramData%\git\config
-这个配置文件官方的说法是这样的。
-> Second user-specific configuration file. If $XDG_CONFIG_HOME is not set or empty, $HOME/.config/git/config will be used. Any single-valued variable set in this file will be overwritten by whatever is in ~/.gitconfig. It is a good idea not to create this file if you sometimes use older versions of Git, as support for this file was added fairly recently.
+2. `$XDG_CONFIG_HOME/git/config` :left_right_arrow: `--global`
 
-大致意思是这是第二个用户配置文件，如果$XDG_CONFIG_HOME不存在或为空，这个文件就是$HOME/.config/git/config, 这个配置文件中的任何单值变量都将被~/.gitconfig覆盖，该文件是最近才添加并被支持的。 那么在优先级上，肯定是~/.gitconfig更高一些。起初我不知道这个文件的存在，使用`git config --global --list`参看global配置项时，并不会load这个specific的配置文件，但使用`git config --list`时又load这个文件。
+    Second user-specific configuration file. If `$XDG_CONFIG_HOME` is not set or empty, `$HOME/.config/git/config` will be used. Any single-valued variable set in this file will be overwritten by whatever is in `~/.gitconfig`. **It is a good idea not to create this file if you sometimes use older versions of Git, as support for this file was added fairly recently.**
 
-> **自定义配置文件:** global级别的配置文件是我使用最多自定义最多的配置文件，如果重装系统还要重新来过，所以我自己自定义了一个独立的config文件放在dropbox里，然后使用命令`git config --global include.path ~/dropbox/bak/.gitconfig`来include我的自定义文件到global配置文件。
+3. `~/.gitconfig` :left_right_arrow: `--global`
 
-### local
-当前仓库的配置文件，.git/config没啥好说的，打开看看就全懂了。
+    User-specific configuration file. Also called "global" configuration file.
+
+4. `$GIT_DIR/config` :left_right_arrow: `--local`
+
+    Repository specific configuration file.
+
+> The files are read in the order given above, with last value found taking precedence over values read earlier. When multiple values are taken then all values of a key from all files will be used.
+> 
+> All writing options will per default write to the repository specific configuration file. Note that this also affects options like `--replace-all` and `--unset`. `git config` will only ever change one file at a time.
