@@ -190,6 +190,17 @@ Extended syntax isn’t available in all Markdown applications. You’ll need to
     - **Linking to Heading IDs**
     
         You can link to headings with custom IDs in the file by creating a standard link with a number sign (#) followed by the custom heading ID.
+    
+    > **Linking to automatically added Heading IDs**
+    > 
+    > ```
+    > ##### Table of Contents  
+    > [Headers](#headers)  
+    > ...
+    > ## Headers
+    > ```
+    > 
+    > If you hover over a Header in a GitHub Markdown file, you'll see a little link simple to the left of it, you can also use that link. The format for that link is `<project URL>#<header name>`. The `<header name>` must be all lower case. While creating the table of contents, you'll need to use this `<header name>` as `headers` of `[Headers](#headers)`. Then the link will be automatically created.
 
 - **Definition Lists**
 
