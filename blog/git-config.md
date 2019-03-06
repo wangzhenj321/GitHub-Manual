@@ -12,13 +12,9 @@ This command will fail with non-zero status upon error
 
 - `git config [<file-option>] [type] [-z|--null] name [value [value_regex]]`
 
-- `git config [<file-option>] [type] [-z|--null] --get name [value_regex]`
+- `git config [<file-option>] [type] [-z|--null] --get | --get-all name [value_regex]`
 
-- `git config [<file-option>] [type] [-z|--null] --get-all name [value_regex]`
-
-- `git config [<file-option>] --unset name [value_regex]`
-
-- `git config [<file-option>] --unset-all name [value_regex]`
+- `git config [<file-option>] --unset | --unset-all name [value_regex]`
 
 - `git config [<file-option>] [-z|--null] [--name-only] -l | --list`
 
@@ -103,3 +99,5 @@ If not set explicitly with `--file`, there are four files where `git config` wil
 > The files are read in the order given above, with last value found taking precedence over values read earlier. When multiple values are taken then all values of a key from all files will be used.
 > 
 > All writing options will per default write to the repository specific configuration file. Note that this also affects options like `--replace-all` and `--unset`. `git config` will only ever change one file at a time.
+
+## Configuration File
