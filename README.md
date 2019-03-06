@@ -25,11 +25,10 @@ Basic manual about how to use GitHub and Git
 1. [Cache your GitHub password](blog/Cache-your-GitHub-password.md)
 2. [Clean up unused git branches](blog/Clean-up-unused-git-branches.md)
 3. [Rename a directory](blog/Rename-a-directory.md)
-4. [Table of content in GitHub wiki](blog/Table-of-content-in-GitHub-wiki.md)
-5. [Update a forked repo](blog/Update-a-forked-repo.md)
-6. [Upload local repo to GitHub](blog/Upload-local-repo-to-GitHub.md)
-7. [Use SSH over HTTPS port(443)](blog/Use-SSH-over-HTTPS-port-(443).md)
-8. [gitignore is not working](blog/gitignore-is-not-working.md)
+4. [Update a forked repo](blog/Update-a-forked-repo.md)
+5. [Upload local repo to GitHub](blog/Upload-local-repo-to-GitHub.md)
+6. [Use SSH over HTTPS port(443)](blog/Use-SSH-over-HTTPS-port-(443).md)
+7. [gitignore is not working](blog/gitignore-is-not-working.md)
 
 ## Tools
 
