@@ -3,9 +3,10 @@ Basic manual about how to use GitHub and Git
 
 ## Basic
 
-1. [From Issue to Pull Request to Merge](blog/From-Issue-to-Pull-Request-to-Merge.md)
-2. [Objects and Index](blog/objects-and-index.md)
-3. [Detached HEAD](blog/Detached-HEAD.md)
+1. [Detached HEAD](blog/Detached-HEAD.md)
+2. [From Issue to Pull Request to Merge](blog/From-Issue-to-Pull-Request-to-Merge.md)
+3. [Objects and Index](blog/objects-and-index.md)
+
 
 ## Commands
 
@@ -15,8 +16,9 @@ Basic manual about how to use GitHub and Git
 4. [git config](blog/git-config.md)
 5. [git merge/rebase/squash](blog/git-merge-rebase-squash.md)
 6. [git rebase -i](blog/git-rebase-‐i.md)
-7. [git submodule and .gitmodules](blog/git-submodule-and-gitmodules.md)
-8. [git stash](blog/git-stash.md)
+7. [git stash](blog/git-stash.md)
+8. [git submodule and .gitmodules](blog/git-submodule-and-gitmodules.md)
+
 
 ## Q & A
 
