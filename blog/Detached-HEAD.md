@@ -1,3 +1,5 @@
+## What's detached HEAD?
+
 **HEAD normally refers to a named branch (e.g. master). Meanwhile, each branch refers to a specific commit.** Let's look at a repo with three commits, one of them tagged, and with branch master checked out:
 > 
                       HEAD (refers to branch 'master')
