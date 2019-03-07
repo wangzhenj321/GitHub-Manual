@@ -34,21 +34,21 @@ This command will fail with non-zero status upon error
 
     - `--system`
     
-        - For writing options: write to system-wide `$(prefix)/etc/gitconfig` rather than the repository `.git/config`.
+        - For **writing** options: write to system-wide `$(prefix)/etc/gitconfig` rather than the repository `.git/config`.
         
-        - For reading options: read only from system-wide `$(prefix)/etc/gitconfig` rather than from all available files.
+        - For **reading** options: read only from system-wide `$(prefix)/etc/gitconfig` rather than from all available files.
     
     - `--global`
     
-        - For writing options: write to global `~/.gitconfig` file rather than the repository `.git/config`, write to `$XDG_CONFIG_HOME/git/config` file if this file exists and the `~/.gitconfig` file doesn’t.
+        - For **writing** options: write to global `~/.gitconfig` file rather than the repository `.git/config`, write to `$XDG_CONFIG_HOME/git/config` file if this file exists and the `~/.gitconfig` file doesn’t.
 
-        - For reading options: read only from global `~/.gitconfig` and from `$XDG_CONFIG_HOME/git/config` rather than from all available files.
+        - For **reading** options: read only from global `~/.gitconfig` and from `$XDG_CONFIG_HOME/git/config` rather than from all available files.
     
     - `--local`
     
-        - For writing options: write to the repository `.git/config` file. This is the default behavior.
+        - For **writing** options: write to the repository `.git/config` file. This is the default behavior.
 
-        - For reading options: read only from the repository `.git/config` rather than from all available files.
+        - For **reading** options: read only from the repository `.git/config` rather than from all available files.
     
     - `--file config-file`
     
@@ -78,7 +78,9 @@ This command will fail with non-zero status upon error
 
 If not set explicitly with `--file`, there are four files where `git config` will search for configuration options:
 
-![](../img/git-config/git_config_list_show_origin.png?raw=true)
+> **On Windows (git version 2.16.2.windows.1)**
+> 
+> ![](../img/git-config/git_config_list_show_origin.png?raw=true)
 
 1. `$(prefix)/etc/gitconfig` :left_right_arrow: `--system`
 
