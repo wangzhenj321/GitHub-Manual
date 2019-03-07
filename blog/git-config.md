@@ -101,5 +101,45 @@ If not set explicitly with `--file`, there are four files where `git config` wil
 > The files are read in the order given above, with last value found taking precedence over values read earlier. When multiple values are taken then all values of a key from all files will be used.
 > 
 > All writing options will per default write to the repository specific configuration file. Note that this also affects options like `--replace-all` and `--unset`. `git config` will only ever change one file at a time.
+> 
+> You can override these rules either by command-line options or by environment variables. The `--global` and the `--system` options will limit the file used to the global or system-wide file respectively. The `GIT_CONFIG` environment variable has a similar effect, but you can specify any filename you want.
+
+## Environment
+
+- `GIT_CONFIG`
+
+    Take the configuration from the given file instead of `.git/config`. Using the `--global` option forces this to `~/.gitconfig`. Using the `--system` option forces this to `$(prefix)/etc/gitconfig`.
 
 ## Configuration File
+
+The Git configuration file contains a number of variables that affect the Git commands' behavior.
+
+- The `.git/config` file in each repository is used to store the configuration for that repository.
+
+- The `$HOME/.gitconfig` is used to store a per-user configuration as fallback values for the `.git/config` file.
+
+- The file `/etc/gitconfig` can be used to store a system-wide default configuration.
+
+The configuration variables are used by both the Git plumbing and the porcelains. The variables are divided into **sections**, wherein the fully qualified variable name of the variable itself is the last dot-separated segment and the section name is everything before the last dot. The variable names are case-insensitive, allow only alphanumeric characters and `-`, and must start with an alphabetic character. Some variables may appear multiple times; we say then that the variable is multivalued.
+
+### Example
+
+```
+# Core variables
+[core]
+       ; Don't trust file modes
+       filemode = false
+
+# Our diff algorithm
+[diff]
+       external = /usr/local/bin/diff-wrapper
+       renames = true
+
+[branch "devel"]
+       remote = origin
+       merge = refs/heads/devel
+```
+
+### Popular variables
+
+- 
