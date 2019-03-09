@@ -142,4 +142,6 @@ The configuration variables are used by both the Git plumbing and the porcelains
 
 ### Popular variables
 
-- 
+- `user.name`
+
+    Your full name to be recorded in any newly created commits. Can be overridden by the `GIT_AUTHOR_NAME` and `GIT_COMMITTER_NAME` environment variables.
