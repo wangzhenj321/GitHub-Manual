@@ -1,3 +1,21 @@
+**Table of Contents**
+
+- [Description](#description)
+
+- [Synopsis](#synopsis)
+
+- [Options](#options)
+
+- [Files](#files)
+
+- [Environment](#environment)
+
+- [Configuration File](#configuration-file)
+
+    - [Example](#example)
+    
+    - [Popular variables](#popular-variables)
+
 ## Description
 
 You can query/set/replace/unset options with this command.
