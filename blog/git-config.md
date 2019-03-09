@@ -145,3 +145,15 @@ The configuration variables are used by both the Git plumbing and the porcelains
 - `user.name`
 
     Your full name to be recorded in any newly created commits. Can be overridden by the `GIT_AUTHOR_NAME` and `GIT_COMMITTER_NAME` environment variables.
+
+- `user.email`
+
+    Your email address to be recorded in any newly created commits. Can be overridden by the `GIT_AUTHOR_EMAIL`, `GIT_COMMITTER_EMAIL`, and `EMAIL` environment variables.
+
+- `core.editor`
+
+    Commands such as `commit` and `tag` that lets you edit messages by launching an editor uses the value of this variable when it is set, and the environment variable `GIT_EDITOR` is not set.
+
+- `credential.helper`
+
+    Specify an external helper to be called when a username or password credential is needed; the helper may consult external storage to avoid prompting the user for the credentials.
