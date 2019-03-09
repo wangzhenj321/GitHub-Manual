@@ -154,6 +154,19 @@ The configuration variables are used by both the Git plumbing and the porcelains
 
     Commands such as `commit` and `tag` that lets you edit messages by launching an editor uses the value of this variable when it is set, and the environment variable `GIT_EDITOR` is not set.
 
+- `core.excludesFile`
+
+    In addition to `.gitignore` (per-directory) and `.git/info/exclude`, Git looks into this file for patterns of files which are not meant to be tracked. "~/" is expanded to the value of $HOME and "~user/" to the specified user’s home directory. Its default value is
+`$XDG_CONFIG_HOME/git/ignore`. If `$XDG_CONFIG_HOME` is either not set or empty, `$HOME/.config/git/ignore` is used instead.
+
+- `core.pager`
+
+    :question: Text viewer for use by Git commands (e.g., `less`). The value is meant to be interpreted by the shell. The order of preference is the `$GIT_PAGER` environment variable, then `core.pager` configuration, then `$PAGER`, and then the default chosen at compile time (usually `less`). 
+
+- `web.browser`
+
+    Specify a web browser that may be used by some commands.
+
 - `credential.helper`
 
     Specify an external helper to be called when a username or password credential is needed; the helper may consult external storage to avoid prompting the user for the credentials.
