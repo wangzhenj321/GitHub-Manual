@@ -12,7 +12,7 @@ Shows the commit logs.
 
     Print out the ref names of any commits that are shown. If short is specified, the ref name prefixes `refs/heads/`, `refs/tags/` and `refs/remotes/` will not be printed. If full is specified, the full ref name (including prefix) will be printed. The default option is short.
     
-    ![](../img/git-log/git_log_decorate.png =1486*200)
+    ![](../img/git-log/git_log_decorate.png =1486x200)
 
 - `--pretty[=<format>], --format=<format>`
 
