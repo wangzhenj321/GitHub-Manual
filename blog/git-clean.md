@@ -31,13 +31,17 @@ As per the Git Documentation `git clean`
 > Remove untracked files from the working tree
 
 Step 1 is to show what will be deleted by using the `-n` option:
+
 ```
 git clean -n
 ```
+
 Clean Step - **beware: this will delete files**:
+
 ```
 git clean -f
 ```
+
 - To remove directories, run `git clean -f -d` or `git clean -fd`
 - To remove ignored files, run `git clean -f -X` or `git clean -fX`
 - To remove ignored and non-ignored files, run `git clean -f -x` or `git clean -fx`
@@ -45,30 +49,31 @@ git clean -f
 
 If `clean.requireForce` is set to "true" (the default) in your configuration, one needs to specify `-f` otherwise nothing will actually happen.
 
-Again see the git-clean docs for more information.
-
 ### Options
-**-f**
-**--force**
 
-If the Git configuration variable clean.requireForce is not set to false, git clean will refuse to run unless given -f, -n or -i.
+- `-d`
 
-**-x**
+Remove untracked directories in addition to untracked files.
 
-Don’t use the standard ignore rules read from .gitignore (per directory) and $GIT_DIR/info/exclude, but do still use the ignore rules given with -e options. This allows removing all untracked files, including build products. This can be used (possibly in conjunction with git reset) to create a pristine working directory to test a clean build.
+> **If an untracked directory is managed by a different Git repository, it is not removed by default. Use `-f` option twice if you really want to remove such a directory.**
 
-**-X**
+- `-f, --force`
 
-Remove only files ignored by Git. This may be useful to rebuild everything from scratch, but keep manually created files.
+If the Git configuration variable `clean.requireForce` is not set to false, `git clean` will refuse to run unless given `-f`, `-n` or `-i`.
 
-**-n**
-**--dry-run**
+> **Git will refuse to delete directories with `.git` sub directory or file unless a second `-f` is given.**
+
+- `-n, --dry-run`
 
 Don’t actually remove anything, just show what would be done.
 
-**-d**
+- `-x`
 
-Remove untracked directories in addition to untracked files. If an untracked directory is managed by a different Git repository, it is not removed by default. Use -f option twice if you really want to remove such a directory.
+Don’t use the standard ignore rules read from .gitignore (per directory) and $GIT_DIR/info/exclude, but do still use the ignore rules given with -e options. **This allows removing all untracked files, including build products.** This can be used (possibly in conjunction with `git reset`) to create a pristine working directory to test a clean build.
+
+- `-X`
+
+Remove **only** files ignored by Git. This may be useful to rebuild everything from scratch, but keep manually created files.
 
 ## References
 
