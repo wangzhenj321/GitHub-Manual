@@ -1,9 +1,8 @@
 #### Table of Contents
 
-| [gc](#gc) | [help](#help) | [init](#init) | [log](#log) | [status](#status) | [reset](#reset) | [add](#add) | [commit](#commit) | [clone](#clone) |
+| [gc](#gc) | [help](#help) | [init](#init) | [log](#log) | [status](#status) | [reset](#reset) | [add](#add) | [commit](#commit) | [clone](#clone) | [**rm**](#rm) |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | [**fetch**](#fetch) | [**pull**](#pull) | [**push**](#push) | [**diff**](#diff) | [**show**](#show) | [**checkout**](#checkout) | [**branch**](#branch) | [**merge**](#merge) | [**tag**](#tag) | [**revert**](#revert) |
-| [**rm**](#rm) |
 
 ### gc
 
