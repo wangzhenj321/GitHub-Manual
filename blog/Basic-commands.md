@@ -1,6 +1,6 @@
 #### Table of Contents
 
-| [gc](#gc) | [help](#help) | [init](#init) | [log](#log) | [status](#status) | [reset](#reset) | [add](#add) | [commit](#commit) | [clone](#clone) | [remote](#remote) |
+| [gc](#gc) | [help](#help) | [init](#init) | [log](#log) | [status](#status) | [reset](#reset) | [add](#add) | [commit](#commit) | [clone](#clone) |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | [**fetch**](#fetch) | [**pull**](#pull) | [**push**](#push) | [**diff**](#diff) | [**show**](#show) | [**checkout**](#checkout) | [**branch**](#branch) | [**merge**](#merge) | [**tag**](#tag) | [**revert**](#revert) |
 | [**rm**](#rm) |
@@ -140,20 +140,6 @@
 Git has a number of different transfer protocols you can use. The previous example uses the https:// protocol, but you may also see git:// or user@server:path/to/repo.git, which uses the SSH transfer protocol.
 
 ---
-
-### remote
-
-- `git remote`
-
-    view remotes
-
-- `git remote add {reference name of remote repository | origin} {url}`
-
-    (create an empty repository on Github first) add the repository on Github as a remote
-
-- `git remote -v`
-
-    `-v` means that git remote will output more information
 
 ### fetch
 
