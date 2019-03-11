@@ -26,7 +26,7 @@ Shows the commit logs.
 
     Draw a text-based graphical representation of the commit history on the left hand side of the output.
     
-    ![](../img/git-log/git_log_graph.png?raw=true)
+    ![](../img/git-log/git_log_graph.png)
 
 - `--stat[=<width>[,<name-width>[,<count>]]]`
 
