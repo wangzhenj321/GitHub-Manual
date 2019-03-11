@@ -26,16 +26,16 @@ Shows the commit logs.
 
     Draw a text-based graphical representation of the commit history on the left hand side of the output.
         
-    <img src="../img/git-log/git_log_graph.png" width="70%">
+    <img src="../img/git-log/git_log_graph.png" width="50%">
 
 - `--stat[=<width>[,<name-width>[,<count>]]]`
 
     Generate a diffstat. By default, as much space as necessary will be used for the filename part, and the rest for the graph part.
     
-    <img src="../img/git-log/git_log_stat.png" width="70%">
+    <img src="../img/git-log/git_log_stat.png" width="50%">
 
 - `--name-only`
 
     Show only names of changed files.
     
-    <img src="../img/git-log/git_log_name-only.png" width="70%">
+    <img src="../img/git-log/git_log_name-only.png" width="50%">
