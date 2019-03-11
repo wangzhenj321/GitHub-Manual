@@ -49,7 +49,7 @@ git clean -f
 
 If `clean.requireForce` is set to "true" (the default) in your configuration, one needs to specify `-f` otherwise nothing will actually happen.
 
-### Options
+## Options
 
 - `-d`
 
