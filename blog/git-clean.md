@@ -53,27 +53,27 @@ If `clean.requireForce` is set to "true" (the default) in your configuration, on
 
 - `-d`
 
-Remove untracked directories in addition to untracked files.
+    Remove untracked directories in addition to untracked files.
 
-> **If an untracked directory is managed by a different Git repository, it is not removed by default. Use `-f` option twice if you really want to remove such a directory.**
+    > **If an untracked directory is managed by a different Git repository, it is not removed by default. Use `-f` option twice if you really want to remove such a directory.**
 
 - `-f, --force`
 
-If the Git configuration variable `clean.requireForce` is not set to false, `git clean` will refuse to run unless given `-f`, `-n` or `-i`.
+    If the Git configuration variable `clean.requireForce` is not set to false, `git clean` will refuse to run unless given `-f`, `-n` or `-i`.
 
-> **Git will refuse to delete directories with `.git` sub directory or file unless a second `-f` is given.**
+    > **Git will refuse to delete directories with `.git` sub directory or file unless a second `-f` is given.**
 
 - `-n, --dry-run`
 
-Don’t actually remove anything, just show what would be done.
+    Don’t actually remove anything, just show what would be done.
 
 - `-x`
 
-Don’t use the standard ignore rules read from .gitignore (per directory) and $GIT_DIR/info/exclude, but do still use the ignore rules given with -e options. **This allows removing all untracked files, including build products.** This can be used (possibly in conjunction with `git reset`) to create a pristine working directory to test a clean build.
+    Don’t use the standard ignore rules read from .gitignore (per directory) and $GIT_DIR/info/exclude, but do still use the ignore rules given with -e options. **This allows removing all untracked files, including build products.** This can be used (possibly in conjunction with `git reset`) to create a pristine working directory to test a clean build.
 
 - `-X`
 
-Remove **only** files ignored by Git. This may be useful to rebuild everything from scratch, but keep manually created files.
+    Remove **only** files ignored by Git. This may be useful to rebuild everything from scratch, but keep manually created files.
 
 ## References
 
