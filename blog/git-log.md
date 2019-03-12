@@ -14,6 +14,10 @@ Shows the commit logs.
         
     <img src="../img/git-log/git_log_decorate.png" width="100%">
 
+- `-<number>, -n <number>, --max-count=<number>`
+
+    Limit the number of commits to output.
+
 - `--pretty[=<format>], --format=<format>`
 
     Pretty-print the contents of the commit logs in a given format, where `<format>` can be one of `oneline`, `short`, `medium`, `full`, `fuller`, `email`, `raw`, `format:<string>` and `tformat:<string>`.
@@ -21,6 +25,14 @@ Shows the commit logs.
     When `=<format>` part is omitted, it defaults to `medium`.
     
     > **Note: you can specify the default pretty format in the repository configuration.**
+
+- `--abbrev-commit`
+
+    Instead of showing the full 40-byte hexadecimal commit object name, show only a partial prefix. Non default number of digits can be specified with `--abbrev=<n>` (which also modifies diff output, if it is displayed).
+
+- `--oneline`
+
+    This is a shorthand for `--pretty=oneline --abbrev-commit` used together.
 
 - `--graph`
 
