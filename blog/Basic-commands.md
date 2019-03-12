@@ -24,44 +24,6 @@
 
     initialize a repository in an existing directory
 
-### log
-
-- `git log`
-
-    show the committed logs
-
-- `git log --stat`
-
-    `--stat` gives some statistics which files have changed in each commit
-
-- `git log --graph --oneline {branch name 1} {branch name 2} ...`
-
-    see the visual representation of the commit history
-
-- `git log -n {number}`
-
-    `-n` flag means that git log will only show that number of commits
-
-- `git log --graph`
-
-    Draw a text-based graphical representation of the commit history on the left hand side of the output. This may cause extra lines to be printed in between commits, in order for the graph history to be drawn properly.
-
-- `git log --pretty[=<format>]`
-
-    Pretty-print the contents of the commit logs in a given format, where <format> can be one of oneline, short, medium, full, fuller, email, raw, format:<string> and tformat:<string>.
-
-- `git log --abbrev-commit`
-
-    Instead of showing the full 40-byte hexadecimal commit object name, show only a partial prefix.
-
-- `git log --oneline`
-
-    This is a shorthand for "--pretty=oneline --abbrev-commit" used together.
-
-- `git log --decorate[=short|full|no]`
-
-    Print out the ref names of any commits that are shown. If short is specified, the ref name prefixes refs/heads/, refs/tags/ and refs/remotes/ will not be printed. If full is specified, the full ref name (including prefix) will be printed. The default option is short.
-
 ### status
 
 - `git status`
