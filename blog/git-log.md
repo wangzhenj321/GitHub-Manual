@@ -25,6 +25,18 @@ Shows the commit logs.
     When `=<format>` part is omitted, it defaults to `medium`.
     
     > **Note: you can specify the default pretty format in the repository configuration.**
+    
+    - `medium`
+    
+        ```
+        commit <sha1>
+        Author: <author>
+        Date:   <author date>
+
+        <title line>
+
+        <full commit message>
+        ```
 
 - `--abbrev-commit`
 
