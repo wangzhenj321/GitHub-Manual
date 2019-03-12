@@ -133,6 +133,10 @@
     - **Linking Images**
     
         To add a link to an image, enclose the Markdown for the image in brackets, and then add the link in parentheses.
+        
+        ```
+        [![An old rock](/assets/images/shiprock.jpg "New Mexico")](https://www.flickr.com/photos/in/photolist-bXMYv)
+        ```
 
 - **Escaping Characters**
 
