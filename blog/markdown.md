@@ -118,6 +118,18 @@
 
     To add an image, add an exclamation mark (`!`), followed by alt text in brackets, and the path or URL to the image asset in parentheses. You can optionally add a title after the URL in the parentheses.
     
+    ```
+    ![Tux, the Linux mascot](/assets/images/tux.png)
+    ```
+    
+    > - For convenience, set the alt text to be empty.
+    > 
+    > - In Github markdown, it's better to use the following way which can control the size of image.
+    > 
+    >   ```
+    >   <img src="/assets/images/tux.png" width="100%">
+    >   ```
+    
     - **Linking Images**
     
         To add a link to an image, enclose the Markdown for the image in brackets, and then add the link in parentheses.
