@@ -12,7 +12,7 @@ Shows the commit logs.
 
     Print out the ref names of any commits that are shown. If short is specified, the ref name prefixes `refs/heads/`, `refs/tags/` and `refs/remotes/` will not be printed. If full is specified, the full ref name (including prefix) will be printed. The default option is short.
         
-    <img src="../img/git-log/git_log_decorate.png" width="90%">
+    <img src="../img/git-log/git_log_decorate.png" width="100%">
 
 - `--pretty[=<format>], --format=<format>`
 
@@ -20,7 +20,7 @@ Shows the commit logs.
     
     When `=<format>` part is omitted, it defaults to `medium`.
     
-    Note: you can specify the default pretty format in the repository configuration.
+    > **Note: you can specify the default pretty format in the repository configuration.**
 
 - `--graph`
 
