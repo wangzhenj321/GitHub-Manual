@@ -46,7 +46,7 @@ Shows the commit logs.
 
     This is a shorthand for `--pretty=oneline --abbrev-commit` used together.
     
-    <img src="../img/git-log/git_log_oneline.png" width="100%">
+    <img src="../img/git-log/git_log_oneline.png" width="70%">
 
 - `--graph`
 
