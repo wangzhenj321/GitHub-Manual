@@ -18,8 +18,9 @@ Basic manual about how to use GitHub and Git
 6. [git merge/rebase/squash](blog/git-merge-rebase-squash.md)
 7. [git rebase -i](blog/git-rebase-‐i.md)
 8. [git remote](blog/git-remote.md)
-9. [git stash](blog/git-stash.md)
-10. [git submodule and .gitmodules](blog/git-submodule-and-gitmodules.md)
+9. [git show](blog/git-show.md)
+10. [git stash](blog/git-stash.md)
+11. [git submodule and .gitmodules](blog/git-submodule-and-gitmodules.md)
 
 
 ## Q & A
