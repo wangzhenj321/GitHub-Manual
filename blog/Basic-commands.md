@@ -2,7 +2,7 @@
 
 | [gc](#gc) | [help](#help) | [init](#init) | [status](#status) | [reset](#reset) | [add](#add) | [commit](#commit) | [clone](#clone) | [**rm**](#rm) | [**fetch**](#fetch) |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| [**pull**](#pull) | [**push**](#push) | [**diff**](#diff) | [**show**](#show) | [**checkout**](#checkout) | [**branch**](#branch) | [**merge**](#merge) | [**tag**](#tag) | [**revert**](#revert) |
+| [**pull**](#pull) | [**push**](#push) | [**diff**](#diff) | [**checkout**](#checkout) | [**branch**](#branch) | [**merge**](#merge) | [**tag**](#tag) | [**revert**](#revert) |
 
 ### gc
 
@@ -133,12 +133,6 @@ Git has a number of different transfer protocols you can use. The previous examp
 - `git diff {commit ID 1} {commit ID 2}`
 
     compare the commit ID 1 with the commit ID 2
-
-### show
-
-- `git show {commit ID}`
-
-    show the diff between this commit and its parent without actually knowing what the parent was
 
 ### checkout
 
