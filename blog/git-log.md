@@ -54,6 +54,10 @@ Shows the commit logs.
         
     <img src="../img/git-log/git_log_graph.png" width="50%">
 
+- `-p, -u, --patch`
+
+    Generate patch (see section on generating patches).
+
 - `--stat[=<width>[,<name-width>[,<count>]]]`
 
     Generate a diffstat. By default, as much space as necessary will be used for the filename part, and the rest for the graph part.
