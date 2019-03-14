@@ -46,4 +46,8 @@ Show changes between the working tree and the index or a tree, changes between t
 
 ## Options
 
+### Options applicable to [`git log`](./git-log.md)
 
+- `--stat[=<width>[,<name-width>[,<count>]]]`
+
+- `--name-only`
