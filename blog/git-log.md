@@ -58,7 +58,7 @@ Shows the commit logs.
 
     Generate patch (see section on generating patches).
     
-    <img src="../img/git-log/git_log_p.png" width="70%">
+    <img src="../img/git-log/git_log_p.png" width="90%">
 
 - `--stat[=<width>[,<name-width>[,<count>]]]`
 
