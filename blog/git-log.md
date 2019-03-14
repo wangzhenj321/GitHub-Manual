@@ -57,6 +57,8 @@ Shows the commit logs.
 - `-p, -u, --patch`
 
     Generate patch (see section on generating patches).
+    
+    <img src="../img/git-log/git_log_p.png" width="70%">
 
 - `--stat[=<width>[,<name-width>[,<count>]]]`
 
