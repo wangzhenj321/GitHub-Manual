@@ -1,7 +1,7 @@
 #### Table of Contents
 
-| [gc](#gc) | [help](#help) | [init](#init) | [status](#status) | [reset](#reset) | [add](#add) | [commit](#commit) | [clone](#clone) | [**rm**](#rm) | [**fetch**](#fetch) |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| [gc](#gc) | [help](#help) | [init](#init) | [reset](#reset) | [add](#add) | [commit](#commit) | [clone](#clone) | [**rm**](#rm) | [**fetch**](#fetch) |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | [**pull**](#pull) | [**push**](#push) | [**checkout**](#checkout) | [**branch**](#branch) | [**merge**](#merge) | [**tag**](#tag) | [**revert**](#revert) |
 
 ### gc
@@ -23,24 +23,6 @@
 - `git init`
 
     initialize a repository in an existing directory
-
-### status
-
-- `git status`
-
-    check the status of your files
-
-- `git status -uno`
-
-    Show no untracked files.
-
-- `git status -unormal`
-
-    Shows untracked files and directories.
-
-- `git status -uall`
-
-    When `-u` option is not used, untracked files and directories are shown (i.e. the same as specifying normal), to help you avoid forgetting to add newly created files. Also shows individual files in untracked directories.
 
 ### reset
 
