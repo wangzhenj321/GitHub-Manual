@@ -14,13 +14,14 @@ Basic manual about how to use GitHub and Git
 2. [git cherry-pick](blog/git-cherry‐pick.md)
 3. [git clean](blog/git-clean.md)
 4. [git config](blog/git-config.md)
-5. [git log](blog/git-log.md)
-6. [git merge/rebase/squash](blog/git-merge-rebase-squash.md)
-7. [git rebase -i](blog/git-rebase-‐i.md)
-8. [git remote](blog/git-remote.md)
-9. [git show](blog/git-show.md)
-10. [git stash](blog/git-stash.md)
-11. [git submodule and .gitmodules](blog/git-submodule-and-gitmodules.md)
+5. [git diff](blog/git-diff.md)
+6. [git log](blog/git-log.md)
+7. [git merge/rebase/squash](blog/git-merge-rebase-squash.md)
+8. [git rebase -i](blog/git-rebase-‐i.md)
+9. [git remote](blog/git-remote.md)
+10. [git show](blog/git-show.md)
+11. [git stash](blog/git-stash.md)
+12. [git submodule and .gitmodules](blog/git-submodule-and-gitmodules.md)
 
 
 ## Q & A
