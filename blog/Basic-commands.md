@@ -2,7 +2,7 @@
 
 | [gc](#gc) | [help](#help) | [init](#init) | [status](#status) | [reset](#reset) | [add](#add) | [commit](#commit) | [clone](#clone) | [**rm**](#rm) | [**fetch**](#fetch) |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| [**pull**](#pull) | [**push**](#push) | [**diff**](#diff) | [**checkout**](#checkout) | [**branch**](#branch) | [**merge**](#merge) | [**tag**](#tag) | [**revert**](#revert) |
+| [**pull**](#pull) | [**push**](#push) | [**checkout**](#checkout) | [**branch**](#branch) | [**merge**](#merge) | [**tag**](#tag) | [**revert**](#revert) |
 
 ### gc
 
@@ -119,20 +119,6 @@ Git has a number of different transfer protocols you can use. The previous examp
 - `git push {reference name of remote repository | origin} {local branch name}`
 
     send local changes to the remote
-
-### diff
-
-- `git diff `
-
-    compare the working directory with the staging area
-
-- `git diff --staged`
-
-    compare the staging area with the latest committed
-
-- `git diff {commit ID 1} {commit ID 2}`
-
-    compare the commit ID 1 with the commit ID 2
 
 ### checkout
 
