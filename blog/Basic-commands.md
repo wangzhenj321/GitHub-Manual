@@ -1,7 +1,7 @@
 #### Table of Contents
 
 | [gc](#gc) | [init](#init) | [reset](#reset) | [add](#add) | [commit](#commit) | [clone](#clone) | [**rm**](#rm) | [**fetch**](#fetch) |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | [**pull**](#pull) | [**push**](#push) | [**checkout**](#checkout) | [**branch**](#branch) | [**merge**](#merge) | [**tag**](#tag) | [**revert**](#revert) |
 
 ### gc
