@@ -21,7 +21,8 @@ Basic manual about how to use GitHub and Git
 9. [git remote](blog/git-remote.md)
 10. [git show](blog/git-show.md)
 11. [git stash](blog/git-stash.md)
-12. [git submodule and .gitmodules](blog/git-submodule-and-gitmodules.md)
+12. [git status](blog/git-status.md)
+13. [git submodule and .gitmodules](blog/git-submodule-and-gitmodules.md)
 
 
 ## Q & A
