@@ -1,8 +1,8 @@
 #### Table of Contents
 
-| [gc](#gc) | [init](#init) | [reset](#reset) | [add](#add) | [commit](#commit) | [clone](#clone) | [**rm**](#rm) | [**fetch**](#fetch) |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| [**pull**](#pull) | [**push**](#push) | [**checkout**](#checkout) | [**branch**](#branch) | [**merge**](#merge) | [**tag**](#tag) | [**revert**](#revert) |
+| [gc](#gc) | [init](#init) | [commit](#commit) | [clone](#clone) | [**rm**](#rm) | [**fetch**](#fetch) | [**pull**](#pull) |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| [**push**](#push) | [**checkout**](#checkout) | [**branch**](#branch) | [**merge**](#merge) | [**tag**](#tag) | [**revert**](#revert) |
 
 ### gc
 
@@ -13,48 +13,6 @@
 - `git init`
 
     initialize a repository in an existing directory
-
-### reset
-
-> The \<tree-ish\>/\<commit\> defaults to HEAD in all forms.
-
-- `git reset [<tree-ish>] [--] <paths>…`
-
-    This form resets the index entries for all \<paths\> to their state at \<tree-ish\>. (It does not affect the working tree or the current branch.)
-
-    This means that `git reset <paths>` is the opposite of `git add <paths>`.
-
-    **Examples**
-    
-    - `git reset -- {filename in the staging area}`
-    
-        undo the `add`
-        
-        > `--` This option can be used to separate command-line options from the list of files, (useful when filenames might be mistaken for command-line options).
-
-- `git reset [<mode>] [<commit>]`
-
-    This form resets the current branch head to \<commit\> and possibly updates the index (resetting it to the tree of \<commit\>) and the working tree depending on \<mode\>. If \<mode\> is omitted, defaults to "--mixed". "--mixed" resets the index but not the working tree (i.e., the changed files are preserved but not marked for commit) and reports what has not been updated. This is the default action.
-
-    **Examples**
-    
-    - `git reset --hard`
-    
-        Undo the changing operations in the working directory and the staging area. Any changes to tracked files in the working tree since \<commit\> are discarded.
-
-    - `git reset HEAD~3`
-    
-        Rewind the master branch to get rid of those **three** commits, and keep the changes of those three commits in the working directory. If you want to remove these changes, you can use the above option '--hard'.
-
-### add
-
-- `git add {filename in the working directory}`
-
-    This command updates the index using the current content found in the working tree, to prepare the content staged for the next commit. 
-    
-    **The "index" holds a snapshot of the content of the working tree, and it is this snapshot that is taken as the contents of the next commit.** Thus after making any changes to the working tree, and before running the commit command, you must use the `add` command to add any new or modified files to the index.
-
-    This command can be performed multiple times before a commit. It only adds the content of the specified file(s) at the time the add command is run; if you want subsequent changes included in the next commit, then you must run `git add` again to add the new content to the index.
 
 ### commit
 
