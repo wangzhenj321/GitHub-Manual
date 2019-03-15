@@ -1,22 +1,12 @@
 #### Table of Contents
 
-| [gc](#gc) | [help](#help) | [init](#init) | [reset](#reset) | [add](#add) | [commit](#commit) | [clone](#clone) | [**rm**](#rm) | [**fetch**](#fetch) |
+| [gc](#gc) | [init](#init) | [reset](#reset) | [add](#add) | [commit](#commit) | [clone](#clone) | [**rm**](#rm) | [**fetch**](#fetch) |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | [**pull**](#pull) | [**push**](#push) | [**checkout**](#checkout) | [**branch**](#branch) | [**merge**](#merge) | [**tag**](#tag) | [**revert**](#revert) |
 
 ### gc
 
 - `git gc`
-
-### help
-
-- `git help {-a | -g}`
-
-    list available sub-commands and some concept guides
-
-- `git help {command | concept}`
-
-    read about a specific sub-command or concept
 
 ### init
 
