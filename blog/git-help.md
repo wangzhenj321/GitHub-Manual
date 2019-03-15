@@ -2,11 +2,19 @@
 
 - With no options and no `COMMAND` or `GUIDE` given, the synopsis of the `git` command and a list of the most commonly used Git commands are printed on the standard output.
 
+    <img src="../img/git-help/git_help.png">
+
 - If the option `--all` or `-a` is given, all available commands are printed on the standard output.
+
+    <img src="../img/git-help/git_help_all.png">
 
 - If the option `--guide` or `-g` is given, a list of the useful Git guides is also printed on the standard output.
 
+    <img src="../img/git-help/git_help_guides.png">
+
 - If a command, or a guide, is given, a manual page for that command or guide is brought up. The `man` program is used by default for this purpose, but this can be overridden by other options or configuration variables.
+
+    <img src="../img/git-help/git_help_help.png">
 
 ## Synopsis
 
