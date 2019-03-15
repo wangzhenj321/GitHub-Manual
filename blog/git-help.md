@@ -38,6 +38,8 @@
     
     - `-m, --man`
     
-        
+        Display manual page for the command in the **man** format. By default the `man` program will be used to display the manual page.
     
+    - `-w, --web`
     
+        Display manual page for the command in the **web (HTML)** format. A web browser will be used for that purpose.
