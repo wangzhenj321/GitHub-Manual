@@ -1,7 +1,7 @@
 #### Table of Contents
 
-| [gc](#gc) | [init](#init) | [commit](#commit) | [clone](#clone) | [**rm**](#rm) | [**fetch**](#fetch) | [**pull**](#pull) |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| [gc](#gc) | [init](#init) | [commit](#commit) | [clone](#clone) | [**fetch**](#fetch) | [**pull**](#pull) |
+| :---: | :---: | :---: | :---: | :---: | :---: |
 | [**push**](#push) | [**merge**](#merge) | [**tag**](#tag) |
 
 ### gc
@@ -103,11 +103,3 @@ Also, since the two branches are merged, the order in which they are typed into 
 - `git tag -a {tag name} -m {“tag message”} {commit ID}`
 
     `-a`: specify the tag name; `-m`: specify the tag message
-
-### rm
-
-- `git rm [--cached] [--] <file>…`
-
-    If you just use `rm`, you will need to follow it up with `git add <fileRemoved>`. `git rm` does this in one step.
-
-    You can also use `git rm --cached` which will remove the file from the index (staging it for deletion on the next commit), but keep your copy in the local file system.
