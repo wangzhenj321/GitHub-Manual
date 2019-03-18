@@ -2,7 +2,7 @@
 
 | [gc](#gc) | [init](#init) | [commit](#commit) | [clone](#clone) | [**rm**](#rm) | [**fetch**](#fetch) | [**pull**](#pull) |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| [**push**](#push) | [**checkout**](#checkout) | [**merge**](#merge) | [**tag**](#tag) |
+| [**push**](#push) | [**merge**](#merge) | [**tag**](#tag) |
 
 ### gc
 
@@ -49,20 +49,6 @@ Git has a number of different transfer protocols you can use. The previous examp
 - `git push {reference name of remote repository | origin} {local branch name}`
 
     send local changes to the remote
-
-### checkout
-
-- `git checkout {commit ID}`
-
-    switch to the commit point of “commit ID"
-
-- `git checkout {branch name}`
-
-    switch to the branch of “branch name"
-
-- `git checkout -- {file name}`
-
-    discard changes of "file name" in working directory
 
 ### merge
 
