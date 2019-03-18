@@ -4,7 +4,11 @@
 
     > :heavy_check_mark: **list**
 
-    If `--list` is given, or if there are no non-option arguments, existing branches are **listed**; the current branch will be highlighted with an asterisk. Option `-r` causes the remote-tracking branches to be listed, and option `-a` shows both local and remote branches. If a `<pattern>` is given, it is used as a shell wildcard to restrict the output to matching branches. **Note that when providing a `<pattern>`, you must use `--list`; otherwise the command is interpreted as branch creation.**
+    If `--list` is given, or if there are no non-option arguments, existing branches are **listed**; the current branch will be highlighted with an asterisk.
+    
+    Option `-r` causes the remote-tracking branches to be listed, and option `-a` shows both local and remote branches.
+    
+    If a `<pattern>` is given, it is used as a shell wildcard to restrict the output to matching branches. **Note that when providing a `<pattern>`, you must use `--list`; otherwise the command is interpreted as branch creation.**
 
 - `git branch [--set-upstream | --track | --no-track] [-l] [-f] <branchname> [<start-point>]`
 
