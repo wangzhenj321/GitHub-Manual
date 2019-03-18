@@ -40,7 +40,7 @@ The files being removed have to be identical to the tip of the branch, and no up
 
 1. `git rm <file>...`
 
-    > **Remove files from the working tree and the index.**
+    > :star: **Remove files from the working tree and the index.**
     
     <img src="../img/git-rm/git_rm.png" width="60%">
     
