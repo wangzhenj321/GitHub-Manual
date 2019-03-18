@@ -60,14 +60,30 @@
     
         Shortcut for `--move --force`.
 
-- `-r, --remotes`
-
-    List or delete (if used with `-d`) the remote-tracking branches.
-
-- `-a, --all`
-
-    List both remote-tracking branches and local branches.
-
 - `--list`
 
     Activate the list mode.
+    
+    - `-r, --remotes`
+
+        List or delete (if used with `-d`) the remote-tracking branches.
+
+    - `-a, --all`
+
+        List both remote-tracking branches and local branches.
+    
+    - `-v, -vv, --verbose`
+    
+        When in list mode, show sha1 and commit subject line for each head, along with relationship to upstream branch (if any). If given twice, print the name of the upstream branch, as well
+    
+    - `--abbrev=<length>`
+    
+        Alter the sha1's minimum display length in the output listing. The default value is 7 and can be overridden by the `core.abbrev`
+config option.
+    
+    - `--no-abbrev`
+    
+        Display the full sha1s in the output listing rather than abbreviating them.
+    
+    <img src="../img/git-branch/git_branch_list.png">
+
