@@ -40,12 +40,12 @@ The files being removed have to be identical to the tip of the branch, and no up
 
 1. `git rm <file>...` :arrow_right: **Remove files from the working tree and the index**
     
-    <img src="../img/git-rm/git_rm.png" width="70%">
+    <img src="../img/git-rm/git_rm.png" width="50%">
 
 2. `git rm --cached <file>...` :arrow_right: **Remove files from the index**
 
-    <img src="../img/git-rm/git_rm_cached.png" width="70%">
+    <img src="../img/git-rm/git_rm_cached.png" width="60%">
 
 3. `rm <file>...` and `git add/rm <file>...` :left_right_arrow: `git rm <file>...`
 
-    <img src="../img/git-rm/rm_and_git_rm.png" width="70%">
+    <img src="../img/git-rm/rm_and_git_rm.png" width="60%">
