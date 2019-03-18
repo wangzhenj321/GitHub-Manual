@@ -2,7 +2,7 @@
 
 | [gc](#gc) | [init](#init) | [commit](#commit) | [clone](#clone) | [**rm**](#rm) | [**fetch**](#fetch) | [**pull**](#pull) |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| [**push**](#push) | [**checkout**](#checkout) | [**branch**](#branch) | [**merge**](#merge) | [**tag**](#tag) | [**revert**](#revert) |
+| [**push**](#push) | [**checkout**](#checkout) | [**merge**](#merge) | [**tag**](#tag) | [**revert**](#revert) |
 
 ### gc
 
@@ -63,32 +63,6 @@ Git has a number of different transfer protocols you can use. The previous examp
 - `git checkout -- {file name}`
 
     discard changes of "file name" in working directory
-
-### branch
-
-- `git branch`
-
-    list the branches
-
-- `git branch -a`
-
-    list both remote-tracking branches and local branches
-
-- `git branch {branch name}`
-
-    create the new branch, named of “branch name”
-
-- `git branch -m {old name} {new name}`
-
-    rename a branch while pointed to any branch
-
-- `git branch -m {new name}`
-
-    rename the current branch
-
-- `git branch -d {branch name}`
-
-    only delete the label of branch, not delete the commits in the branch
 
 ### merge
 
