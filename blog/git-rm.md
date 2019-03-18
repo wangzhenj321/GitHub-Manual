@@ -58,4 +58,4 @@ The files being removed have to be identical to the tip of the branch, and no up
 
     > **The files being removed have to be identical to the tip of the branch.**
     
-    <img src="../img/git-rm/vim_and_git_rm.png" width="70%">
+    <img src="../img/git-rm/vim_and_git_rm.png" width="60%">
