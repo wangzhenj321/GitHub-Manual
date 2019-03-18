@@ -60,4 +60,4 @@
     
     - **Step 3:** `git log --stat`
     
-        <img src="../img/git-checkout/git_log_stat.png">
+        <img src="../img/git-checkout/git_log_stat.png" width="70%">
