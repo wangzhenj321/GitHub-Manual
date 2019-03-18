@@ -2,7 +2,7 @@
 
 This command updates the index using the current content found in the working tree, to prepare the content staged for the next commit. It typically adds the current content of existing paths as a whole, but with some options it can also be used to add content with only part of the changes made to the working tree files applied, or remove paths that do not exist in the working tree anymore.
 
-> **The `git add` command will not add ignored files by default.** If any ignored files were explicitly specified on the command line, `git add` will fail with a list of ignored files. Ignored files reached by directory recursion or filename globbing performed by Git (quote your globs before the shell) will be silently ignored. The `git add` command can be used to add ignored files with the `-f` (force) option.
+> **The `git add` command will not add ignored files by default.** If any ignored files were explicitly specified on the command line, `git add` will fail with a list of ignored files. Ignored files reached by **directory recursion** or **filename globbing** performed by Git (quote your globs before the shell) will be silently ignored. The `git add` command can be used to add ignored files with the `-f` (force) option.
 
 ## Synopsis
 
