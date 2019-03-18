@@ -2,7 +2,7 @@
 
 | [gc](#gc) | [init](#init) | [commit](#commit) | [clone](#clone) | [**rm**](#rm) | [**fetch**](#fetch) | [**pull**](#pull) |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| [**push**](#push) | [**checkout**](#checkout) | [**merge**](#merge) | [**tag**](#tag) | [**revert**](#revert) |
+| [**push**](#push) | [**checkout**](#checkout) | [**merge**](#merge) | [**tag**](#tag) |
 
 ### gc
 
@@ -117,24 +117,6 @@ Also, since the two branches are merged, the order in which they are typed into 
 - `git tag -a {tag name} -m {“tag message”} {commit ID}`
 
     `-a`: specify the tag name; `-m`: specify the tag message
-
-### revert
-
-- `git revert {commit}`
-
-    Commits to revert.
-
-- `git revert -n {commit}`
-
-    Usually the command automatically creates some commits with commit log messages stating which commits were reverted. This flag applies the changes necessary to revert the named commits to your working tree and the index, but does not make the commits. In addition, when this option is used, your index does not have to match the HEAD commit. The revert is done against the beginning state of your index.
-
-- `git revert HEAD~3`
-
-    Revert the changes specified by the ***fourth*** last commit in HEAD and create a new commit with the reverted changes.
-
-- `git revert -n master~5..master~2`
-
-    Revert the changes done by commits from the ***fifth*** last commit in master (included) to the ***third*** last commit in master (included), but do not create any commit with the reverted changes. The revert only modifies the working tree and the index.
 
 ### rm
 
