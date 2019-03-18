@@ -52,12 +52,12 @@
     
     - **Step 1:** `git log -p`
     
-        <img src="../img/git-checkout/git_log_p">
+        <img src="../img/git-checkout/git_log_p.png">
     
     - **Step 2:** `git checkout 965870a2030b7b8bac39e5c2467543b1461451a4 -- blog/git-rm.md`
     
-        <img src="../img/git-checkout/git_checkout_update">
+        <img src="../img/git-checkout/git_checkout_update.png">
     
     - **Step 3:** `git log --stat`
     
-        <img src="../img/git-checkout/git_log_stat">
+        <img src="../img/git-checkout/git_log_stat.png">
