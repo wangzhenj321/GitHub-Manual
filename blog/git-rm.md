@@ -32,12 +32,20 @@ The files being removed have to be identical to the tip of the branch, and no up
 
     This option can be used to separate command-line options from the list of files, (useful when filenames might be mistaken for command-line options).
 
+- `--cached`
+
+    Use this option to unstage and remove paths only from the index. Working tree files, whether modified or not, will be left alone.
+
 ## Examples
 
-1. `git rm <file>...`
-
-    > :arrow_right: Remove files from the working tree and the index.
+1. `git rm <file>...` :arrow_right: **Remove files from the working tree and the index**
     
     <img src="../img/git-rm/git_rm.png" width="50%">
 
-2. `git rm --cached <file>...`
+2. `git rm --cached <file>...` :arrow_right: **Remove files from the index**
+
+    <img src="../img/git-rm/git_rm_cached.png" width="50%">
+
+3. `rm <file>...` and `git add/rm <file>...` :left_right_arrow: `git rm <file>...`
+
+    <img src="../img/git-rm/rm_and_git_rm.png" width="50%">
