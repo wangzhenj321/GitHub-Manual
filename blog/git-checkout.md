@@ -30,6 +30,8 @@
 
 1. Reset or revert a specific file to a specific revision using Git?
 
+    Refer to: https://stackoverflow.com/questions/215718/reset-or-revert-a-specific-file-to-a-specific-revision-using-git?rq=1
+
     **Q:** I have made some changes to a file which has been committed a few times as part of a group of files, but now want to reset/revert the changes on it back to a previous version.
     
     **A:** Assuming the hash of the commit you want is `c5f567`:
