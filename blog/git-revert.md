@@ -52,5 +52,4 @@ Given one or more existing commits, revert the changes that the related patches 
 
 2. `git revert -n master~5..master~2`
 
-    Revert the changes done by commits from the **fifth** last commit in master (included) to the third last commit in master (included), but do not create any commit with the reverted changes.
-The revert only modifies the working tree and the index.
+    Revert the changes done by commits from the **fifth** last commit in master (included) to the **third** last commit in master (included), but do not create any commit with the reverted changes. The revert only modifies the working tree and the index.
