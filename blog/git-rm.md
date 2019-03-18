@@ -38,9 +38,9 @@ The files being removed have to be identical to the tip of the branch, and no up
 
 ## Examples
 
-1. `git rm <file>...`
+1. `git rm <file>...` :star:
 
-    > :star: **Remove files from the working tree and the index.**
+    > **Remove files from the working tree and the index.**
     
     <img src="../img/git-rm/git_rm.png" width="60%">
     
