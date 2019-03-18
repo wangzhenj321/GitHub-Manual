@@ -14,7 +14,7 @@
 
 - `git checkout [-p|--patch] [<tree-ish>] [--] [<paths>...]`
 
-    > :heavy_check_mark: **update**
+    > :heavy_check_mark: :star: **update**
 
     When `<paths>` or `--patch` are given, git checkout does not switch branches. It **updates** the named paths in the working tree from the index file or from a named `<tree-ish>` (most often a commit).
 
