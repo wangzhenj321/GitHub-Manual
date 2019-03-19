@@ -31,6 +31,9 @@ Basic manual about how to use GitHub and Git
 19. [git status](blog/git-status.md)
 20. [git submodule and .gitmodules](blog/git-submodule-and-gitmodules.md)
 
+## Guides
+
+1. [gitrevisions](blog/gitrevisions.md)
 
 ## Q & A
 
