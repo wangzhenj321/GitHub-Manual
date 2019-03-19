@@ -4,11 +4,11 @@
 
     <img src="../img/git-help/git_help.png">
 
-- If the option `--all` or `-a` is given, all available commands are printed on the standard output.
+- If the option `--all` or `-a` is given, all available **commands** are printed on the standard output.
 
     <img src="../img/git-help/git_help_all.png">
 
-- If the option `--guide` or `-g` is given, a list of the useful Git guides is also printed on the standard output.
+- If the option `--guide` or `-g` is given, a list of the useful Git **guides** is also printed on the standard output.
 
     <img src="../img/git-help/git_help_guides.png">
 
