@@ -10,7 +10,7 @@ A revision parameter `<rev>` typically, but not necessarily, names a commit obje
 
 | Object names | Examples |
 | --- | --- |
-| `<sha1>` [^1] :star: | `dae86e1950b1277e545cee180551750029cfe735`, `dae86e` |
+| `<sha1>` :star: | `dae86e1950b1277e545cee180551750029cfe735`, `dae86e` |
 | `<describeOutput>` | `v1.7.4.2-679-g3bee7fb` |
 | `<refname>` :star: | `master`, `heads/master`, `refs/heads/master` |
 | `<refname>@{<date>}` | `master@{yesterday}`, `HEAD@{5 minutes ago}` |
@@ -28,9 +28,9 @@ A revision parameter `<rev>` typically, but not necessarily, names a commit obje
 | `<rev>:<path>` | `HEAD:README`, `:README`, `master:./README` |
 | `:<n>:<path>` | `:0:README`, `:README` |
 
-### Description of parts of object names [^1]
+### Description of parts of object names
 
-[^1]: `<sha1>`, e.g. `dae86e1950b1277e545cee180551750029cfe735`, `dae86e`
+- `<sha1>`, e.g. `dae86e1950b1277e545cee180551750029cfe735`, `dae86e`
 
     The full SHA-1 object name (40-byte hexadecimal string), or a leading substring that is unique within the repository.
 
