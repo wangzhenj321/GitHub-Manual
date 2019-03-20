@@ -179,6 +179,8 @@ Extended syntax isn’t available in all Markdown applications. You’ll need to
 
 - **Footnotes**
 
+    > **[GitHub Flavored Markdown Spec](#github-flavored-markdown-spec) doesn't support footnotes.**
+
     Footnotes allow you to add notes and references without cluttering the body of the document. When you create a footnote, a superscript number with a link appears where you added the footnote reference.
     
     ```
