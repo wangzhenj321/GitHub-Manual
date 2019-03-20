@@ -28,7 +28,7 @@ A revision parameter `<rev>` typically, but not necessarily, names a commit obje
 | `<rev>:<path>` | `HEAD:README`, `:README`, `master:./README` |
 | `:<n>:<path>` | `:0:README`, `:README` |
 
-### Parts of object names
+### Description of parts of object names
 
 - `<sha1>`, e.g. `dae86e1950b1277e545cee180551750029cfe735`, `dae86e`
 
