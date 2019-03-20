@@ -58,7 +58,7 @@ History traversing commands such as `git log` operate on a set of commits, not j
 
     A suffix `^` followed by an exclamation mark is the same as giving commit `<rev>` and then all its parents prefixed with `^` to exclude them (and their ancestors).
 
-### Examples
+## Examples
 
 ```
    G   H   I   J
@@ -71,7 +71,6 @@ History traversing commands such as `git log` operate on a set of commits, not j
           \   /
            \ /
             A
-
 ```
 
 Here are a handful of examples:
