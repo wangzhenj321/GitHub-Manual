@@ -44,7 +44,7 @@ A revision parameter `<rev>` typically, but not necessarily, names a commit obje
 
 - `<rev>~<n>`, e.g. `master~3`
 
-    A suffix `~<n>` to a revision parameter means the commit object that is the `<n>`th generation ancestor of the named commit object, following only the first parents. I.e. `<rev>~3` is equivalent to `<rev>^^^` which is equivalent to `<rev>^1^1^1`.
+    A suffix `~<n>` to a revision parameter means the commit object that is the **`<n>`th generation ancestor** of the named commit object, following only the first parents. I.e. `<rev>~3` is equivalent to `<rev>^^^` which is equivalent to `<rev>^1^1^1`.
 
 ## Specifying ranges
 
