@@ -8,11 +8,19 @@ In addition, some Git commands (such as `git show`) also take revision parameter
 
 A revision parameter `<rev>` typically, but not necessarily, names a commit object. It uses what is called an extended SHA-1 syntax. Here are various ways to spell object names.
 
+### Parts of object names
+
+- `<sha1>`
+
+    The full SHA-1 object name (40-byte hexadecimal string), or a leading substring that is unique within the repository.
+
+- ``
+
 | Object names | Examples |
 | --- | --- |
-| `<sha1>` | dae86e1950b1277e545cee180551750029cfe735, dae86e |
-| `<describeOutput>` | v1.7.4.2-679-g3bee7fb |
-| `<refname>` | master, heads/master, refs/heads/master |
+| `<sha1>` | `dae86e1950b1277e545cee180551750029cfe735`, `dae86e` |
+| `<describeOutput>` | `v1.7.4.2-679-g3bee7fb` |
+| `<refname>` | `master`, `heads/master`, `refs/heads/master` |
 | `<refname>@{<date>}` | master@{yesterday}, HEAD@{5 minutes ago} |
 | `<refname>@{<n>}` | master@{1} |
 | `@{<n>}` | @{1} |
