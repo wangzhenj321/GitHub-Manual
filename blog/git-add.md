@@ -8,11 +8,7 @@ It typically adds the current content of existing paths as a whole, but with som
 
 ## Synopsis
 
-```
-git add [--force | -f] [--[no-]all | --[no-]ignore-removal | [--update | -u]]
-         [--intent-to-add | -N] [--refresh] [--ignore-errors] [--ignore-missing]
-         [--] [<pathspec>...]
-```
+`git add [--force | -f] [--[no-]all | --[no-]ignore-removal | [--update | -u]] [--intent-to-add | -N] [--refresh] [--] [<pathspec>...]`
 
 ## Options
 
