@@ -27,3 +27,33 @@ A revision parameter `<rev>` typically, but not necessarily, names a commit obje
 | `:/<text>` | :/fix nasty bug |
 | `<rev>:<path>` | HEAD:README, :README, master:./README |
 | `:<n>:<path>` | :0:README, :README |
+
+##
+
+History traversing commands such as `git log` operate on a set of commits, not just a single commit. To these commands, specifying a single revision with the notation described in the previous section means the set of commits reachable from that commit, following the commit ancestry chain.
+
+- `<rev>`
+
+    Include commits that are reachable from (i.e. ancestors of) `<rev>`.
+
+- `^<rev>`
+
+    Exclude commits that are reachable from (i.e. ancestors of) `<rev>`.
+
+- `<rev1>..<rev2>` :left_right_arrow: `^r1 r2`
+
+    Include commits that are reachable from `<rev2>` but exclude those that are reachable from `<rev1>`. When either `<rev1>` or `<rev2>` is omitted, it defaults to HEAD.
+    
+    For example, `origin..` is a shorthand for `origin..HEAD` and asks "What did I do since I forked from the origin branch?" Similarly, `..origin` is a shorthand for `HEAD..origin` and asks "What did the origin do since I forked from them?"
+
+- `<rev1>...<rev2>`
+
+    Include commits that are reachable from either `<rev1>` or `<rev2>` but exclude those that are reachable from both. When either `<rev1>` or `<rev2>` is omitted, it defaults to HEAD.
+
+- `<rev>^@`, e.g. `HEAD^@`
+
+    A suffix `^` followed by an at sign is the same as listing all parents of `<rev>` (meaning, include anything reachable from its parents, but not the commit itself).
+
+- `<rev>^!`, e.g. `HEAD^!`
+
+    A suffix `^` followed by an exclamation mark is the same as giving commit `<rev>` and then all its parents prefixed with `^` to exclude them (and their ancestors).
