@@ -8,24 +8,16 @@ In addition, some Git commands (such as `git show`) also take revision parameter
 
 A revision parameter `<rev>` typically, but not necessarily, names a commit object. It uses what is called an extended SHA-1 syntax. Here are various ways to spell object names.
 
-### Parts of object names
-
-- `<sha1>`
-
-    The full SHA-1 object name (40-byte hexadecimal string), or a leading substring that is unique within the repository.
-
-- ``
-
 | Object names | Examples |
 | --- | --- |
 | `<sha1>` | `dae86e1950b1277e545cee180551750029cfe735`, `dae86e` |
 | `<describeOutput>` | `v1.7.4.2-679-g3bee7fb` |
 | `<refname>` | `master`, `heads/master`, `refs/heads/master` |
-| `<refname>@{<date>}` | master@{yesterday}, HEAD@{5 minutes ago} |
-| `<refname>@{<n>}` | master@{1} |
-| `@{<n>}` | @{1} |
-| `@{-<n>}` | @{-1} |
-| `<branchname>@{upstream}` | master@{upstream}, @{u} |
+| `<refname>@{<date>}` | `master@{yesterday}`, `HEAD@{5 minutes ago}` |
+| `<refname>@{<n>}` | `master@{1}` |
+| `@{<n>}` | `@{1}` |
+| `@{-<n>}` | `@{-1}` |
+| `<branchname>@{upstream}` | `master@{upstream}`, `@{u}` |
 | `<branchname>@{push}` | master@{push}, @{push} |
 | `<rev>^` | HEAD^, v1.5.1^0 |
 | `<rev>~<n>` | master~3 |
@@ -35,6 +27,24 @@ A revision parameter `<rev>` typically, but not necessarily, names a commit obje
 | `:/<text>` | :/fix nasty bug |
 | `<rev>:<path>` | HEAD:README, :README, master:./README |
 | `:<n>:<path>` | :0:README, :README |
+
+### Parts of object names
+
+- `<sha1>`, e.g. `dae86e1950b1277e545cee180551750029cfe735`, `dae86e`
+
+    The full SHA-1 object name (40-byte hexadecimal string), or a leading substring that is unique within the repository.
+
+- `<refname>`, e.g. `master`, `heads/master`, `refs/heads/master`
+
+    A symbolic ref name.
+
+- `<rev>^`, e.g. `HEAD^`, `v1.5.1^0`
+
+    A suffix `^` to a revision parameter means the **first parent** of that commit object. `^<n>` means the `<n>`th parent (i.e. `<rev>^` is equivalent to `<rev>^1`). As a special rule, `<rev>^0` means the commit itself and is used when `<rev>` is the object name of a tag object that refers to a commit object.
+
+- `<rev>~<n>`, e.g. `master~3`
+
+    A suffix `~<n>` to a revision parameter means the commit object that is the `<n>`th generation ancestor of the named commit object, following only the first parents. I.e. `<rev>~3` is equivalent to `<rev>^^^` which is equivalent to `<rev>^1^1^1`.
 
 ## Specifying ranges
 
