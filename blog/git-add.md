@@ -19,13 +19,25 @@ git add [--verbose | -v] [--dry-run | -n] [--force | -f] [--interactive | -i] [-
 
     Files to add content from.
     
-    > **Fileglobs (e.g. `*.c`) can be given to add all matching files.**
+    > **Fileglobs** (e.g. `*.c`) can be given to add all matching files.
     
-    > **Also a leading directory name (e.g. dir to add `dir/file1` and `dir/file2`) can be given to update the index to match the current state of the directory as a whole.**
+    > Also a **leading directory** name (e.g. dir to add `dir/file1` and `dir/file2`) can be given to update the index to match the current state of the directory as a whole.
 
 - `-f, --force`
 
     Allow adding otherwise ignored files.
+
+- `-u, --update`
+
+    Update the index just where it already has an entry matching `<pathspec>`. This removes as well as modifies index entries to match the working tree, **but adds no new files**.
+    
+    If no `<pathspec>` is given when `-u` option is used, all tracked files in the entire working tree are updated (old versions of Git used to limit the update to the current directory and its subdirectories).
+
+- `-A, --all, --no-ignore-removal`
+
+    Update the index not only where the working tree has a file matching `<pathspec>` but also where the index already has an entry. **This adds, modifies, and removes index entries to match the working tree.**
+    
+    If no `<pathspec>` is given when `-A` option is used, all files in the entire working tree are updated (old versions of Git used to limit the update to the current directory and its subdirectories).
 
 - `--`
 
