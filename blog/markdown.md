@@ -124,7 +124,7 @@
     
     > - For convenience, set the alt text to be empty.
     > 
-    > - In Github markdown, it's better to use the following way which can control the size of image.
+    > - In [GitHub Flavored Markdown Spec](#github-flavored-markdown-spec), it's better to use the following way which can control the size of image.
     > 
     >   ```
     >   <img src="/assets/images/tux.png" width="100%">
