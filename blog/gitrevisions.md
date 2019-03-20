@@ -28,7 +28,7 @@ A revision parameter `<rev>` typically, but not necessarily, names a commit obje
 | `<rev>:<path>` | HEAD:README, :README, master:./README |
 | `:<n>:<path>` | :0:README, :README |
 
-##
+## Specifying ranges
 
 History traversing commands such as `git log` operate on a set of commits, not just a single commit. To these commands, specifying a single revision with the notation described in the previous section means the set of commits reachable from that commit, following the commit ancestry chain.
 
@@ -57,3 +57,35 @@ History traversing commands such as `git log` operate on a set of commits, not j
 - `<rev>^!`, e.g. `HEAD^!`
 
     A suffix `^` followed by an exclamation mark is the same as giving commit `<rev>` and then all its parents prefixed with `^` to exclude them (and their ancestors).
+
+### Examples
+
+```
+   G   H   I   J
+    \ /     \ /
+     D   E   F
+      \  |  / \
+       \ | /   |
+        \|/    |
+         B     C
+          \   /
+           \ /
+            A
+
+```
+
+Here are a handful of examples:
+
+```
+D                G H D
+D F              G H I J D F
+^G D             H D
+^D B             E I J F B
+B..C             C
+B...C            G H D E B C
+^D B C           E I J F B C
+C                I J F C
+C^@              I J F
+C^!              C
+F^! D            G H D F
+```
