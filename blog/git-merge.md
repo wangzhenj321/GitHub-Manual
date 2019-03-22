@@ -1,8 +1,32 @@
 ## Description
+
+- `git merge [--no-commit] [--ff] [--squash] [-m <msg>] [<commit>...]`
+
+    Incorporates changes from the named commits (since the time their histories diverged from the current branch) into the current branch.
+
+    **From:**
+    ```
+         A---B---C topic
+        /
+    D---E---F---G master
+    ```
     
+    **To:**
+    ```
+         A---B---C topic
+        /         \
+    D---E---F---G---H master
+    ```
+
+- `git merge --abort`
+
+    This syntax can only be run after the merge has resulted in conflicts. `git merge --abort` will abort the merge process and try to reconstruct the pre-merge state. However, if there were **uncommitted changes** when the merge started (and especially if those changes were further modified after the merge was started), `git merge --abort` will in some cases be **unable** to reconstruct the original (pre-merge) changes.
+    
+    > **Warning:** Running `git merge` with non-trivial uncommitted changes is discouraged: while possible, it may leave you in a state that is hard to back out of in the case of a conflict.
+
 ## Synopsis
 
-- `git merge [-n] [--stat] [--no-commit] [--squash] [--[no-]edit] [-s <strategy>] [-X <strategy-option>] [-S[<keyid>]] [--[no-]rerere-autoupdate] [-m <msg>] [<commit>...]`
+- `git merge [--no-commit] [--ff] [--squash] [-m <msg>] [<commit>...]`
 
 - `git merge --abort`
 
@@ -32,7 +56,8 @@
 
 - `--squash, --no-squash`
 
-Produce the working tree and index state as if a real merge happened (except for the merge information), but do not actually make a commit, move the HEAD, or record $GIT_DIR/MERGE_HEAD (to cause the next git commit command to create a merge commit). This allows you to create a single commit on top of the current branch whose effect is the same as merging another branch
-(or more in case of an octopus).
+    > Refer to [`git merge --squash`](git-merge-rebase-squash.md#git-merge---squash)
 
-With --no-squash perform the merge and commit the result. This option can be used to override --squash.
+- `-m <msg>`
+
+    Set the commit message to be used for the merge commit (in case one is created).
