@@ -46,12 +46,18 @@ Show changes between the working tree and the index or a tree, changes between t
 
 ## Options
 
-- `<path>...`
+- `-p, -u, --patch`
 
-    The `<paths>` parameters, when given, are used to limit the diff to the named paths (you can give directory names and get diff for all files under them).
-
-### Options applicable to [`git log`](./git-log.md)
+    Generate patch (see section on generating patches). This is the default.
 
 - `--stat[=<width>[,<name-width>[,<count>]]]`
 
+    Generate a diffstat.
+
 - `--name-only`
+
+    Show only names of changed files.
+
+- `<path>...`
+
+    The `<paths>` parameters, when given, are used to limit the diff to the named paths (you can give directory names and get diff for all files under them).
