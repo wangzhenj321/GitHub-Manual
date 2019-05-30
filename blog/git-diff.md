@@ -46,6 +46,10 @@ Show changes between the working tree and the index or a tree, changes between t
 
 ## Options
 
+- `<path>...`
+
+    The `<paths>` parameters, when given, are used to limit the diff to the named paths (you can give directory names and get diff for all files under them).
+
 ### Options applicable to [`git log`](./git-log.md)
 
 - `--stat[=<width>[,<name-width>[,<count>]]]`
