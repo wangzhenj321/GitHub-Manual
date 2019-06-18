@@ -16,7 +16,7 @@
 
     > :heavy_check_mark: :star: **update**
 
-    When `<paths>` or `--patch` are given, git checkout does not switch branches. It **updates** the named paths in the working tree from the index file (when without `<tree-ish>`) or from a named `<tree-ish>` (most often a commit). The `<tree-ish>` argument can be used to specify a specific tree-ish (i.e. commit, tag or tree) to update the index for the given paths before updating the working tree.
+    When `<paths>` or `--patch` are given, git checkout does not switch branches. It **updates** the named paths in the working tree from the index file (when without `<tree-ish>`) or from a named `<tree-ish>` (most often a commit). The `<tree-ish>` argument can be used to specify a specific tree-ish (i.e. commit, tag or tree) to update the index for the given paths before updating the working tree (also update the working tree from the updated index for the given paths).
     
     > In this case, the `-b` and `--track` options are meaningless and giving either of them results in an error.
 
