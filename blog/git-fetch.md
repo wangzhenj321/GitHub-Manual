@@ -32,27 +32,27 @@ The native transport (i.e. git:// URL) does no authentication and should be used
 
 The following syntaxes may be used with them:
 
-- ssh://[user@]host.xz[:port]/path/to/repo.git/
-- git://host.xz[:port]/path/to/repo.git/
-- http[s]://host.xz[:port]/path/to/repo.git/
-- ftp[s]://host.xz[:port]/path/to/repo.git/
-- rsync://host.xz/path/to/repo.git/
+- `ssh://[user@]host.xz[:port]/path/to/repo.git/`
+- `git://host.xz[:port]/path/to/repo.git/`
+- `http[s]://host.xz[:port]/path/to/repo.git/`
+- `ftp[s]://host.xz[:port]/path/to/repo.git/`
+- `rsync://host.xz/path/to/repo.git/`
 
 An alternative scp-like syntax may also be used with the ssh protocol:
 
-- [user@]host.xz:path/to/repo.git/
+- `[user@]host.xz:path/to/repo.git/`
 
 This syntax is only recognized if there are no slashes before the first colon. This helps differentiate a local path that contains a colon. For example the local path `foo:bar` could be specified as an absolute path or `./foo:bar` to avoid being misinterpreted as an ssh url.
 
 The ssh and git protocols additionally support `~username` expansion:
 
-- ssh://[user@]host.xz[:port]/~[user]/path/to/repo.git/
-- git://host.xz[:port]/~[user]/path/to/repo.git/
-- [user@]host.xz:/~[user]/path/to/repo.git/
+- `ssh://[user@]host.xz[:port]/~[user]/path/to/repo.git/`
+- `git://host.xz[:port]/~[user]/path/to/repo.git/`
+- `[user@]host.xz:/~[user]/path/to/repo.git/`
 
 For local repositories, also supported by Git natively, the following syntaxes may be used:
 
-- /path/to/repo.git/
-- file:///path/to/repo.git/
+- `/path/to/repo.git/`
+- `file:///path/to/repo.git/`
 
 These two syntaxes are mostly equivalent, except when cloning, when the former implies `--local` option.
