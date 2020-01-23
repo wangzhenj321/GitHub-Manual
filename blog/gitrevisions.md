@@ -58,7 +58,7 @@ History traversing commands such as `git log` operate on a set of commits, not j
 
     Exclude commits that are reachable from (i.e. ancestors of) `<rev>`.
 
-- `<rev1>..<rev2>` :left_right_arrow: `^r1 r2`
+- `<rev1>..<rev2>` :left_right_arrow: `^r1 r2` :star:
 
     Include commits that are reachable from `<rev2>` but exclude those that are reachable from `<rev1>`. When either `<rev1>` or `<rev2>` is omitted, it defaults to HEAD.
     
