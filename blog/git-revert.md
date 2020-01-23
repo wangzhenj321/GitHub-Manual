@@ -26,6 +26,12 @@ Given one or more existing commits, revert the changes that the related patches 
     
         With this option, `git revert` will not start the commit message editor.
 
+- `-m parent-number, --mainline parent-number`
+
+    Usually you cannot revert a merge because you do not know which side of the merge should be considered the mainline. This option specifies the parent number (starting from 1) of the mainline and allows revert to reverse the change relative to the specified parent.
+    
+    > If merging branch B into branch A, then the parent number of branch A is 1, while that of branch B is 2. `-m 1` is to keep the change of branch A and reverse the change of branch B.
+
 - `-n, --no-commit`
 
     Usually the command automatically creates some commits with commit log messages stating which commits were reverted. This flag applies the changes necessary to revert the named commits to your working tree and the index, but does not make the commits. **In addition, when this option is used, your index does not have to match the HEAD commit.** The revert is done against the beginning state of your index.
