@@ -1,6 +1,6 @@
 ## Description
 
-Fetch branches and/or tags (collectively, "refs") from one or more other repositories, along with the objects necessary to complete their histories. Remote-tracking branches are updated (see the description of `<refspec>` below for ways to control this behavior).
+Fetch branches and/or tags (collectively, "refs") from one or more other repositories, along with the objects necessary to complete their histories. **Remote-tracking branches** are updated (see the description of `<refspec>` below for ways to control this behavior).
 
 `git fetch` can fetch from either a single named repository or URL, or from several repositories at once if `<group>` is given and there is a `remotes.<group>` entry in the configuration file.
 
