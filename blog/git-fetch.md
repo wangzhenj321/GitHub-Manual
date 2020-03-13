@@ -26,7 +26,7 @@ ca07d5f8b9888a29ff05b8c8b16f287cba40e747    branch 'master' of https://github.co
 
 - `<repository>`
 
-    The "remote" repository that is the source of a fetch or pull operation. This parameter can be either a URL (see the section [GIT URLS](#git-urls) below) or the name of a remote (see the section REMOTES below).
+    The "remote" repository that is the source of a fetch or pull operation. This parameter can be either a URL (see the section [GIT URLS](#git-urls) below) or the name of a remote (see the section [REMOTES](#remotes) below).
 
 - `<refspec>`
 
@@ -80,4 +80,12 @@ These two syntaxes are mostly equivalent, except when cloning, when the former i
 
 ## REMOTES
 
+       The name of one of the following can be used instead of a URL as <repository> argument:
 
+       ·   a remote in the Git configuration file: $GIT_DIR/config,
+
+       ·   a file in the $GIT_DIR/remotes directory, or
+
+       ·   a file in the $GIT_DIR/branches directory.
+
+       All of these also allow you to omit the refspec from the command line because they each contain a refspec which git will use by default.
