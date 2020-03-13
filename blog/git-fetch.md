@@ -2,7 +2,7 @@
 
 Fetch **branches** and/or **tags** (collectively, "refs") from one or more other repositories, along with the objects necessary to complete their histories. **Remote-tracking branches** are updated (see the description of `<refspec>` below for ways to control this behavior).
 
-> By default, any tag that points into the histories being fetched is also fetched; the effect is to fetch tags that point at branches that you are interested in. This default behavior can be changed by using the `--tags` or `--no-tags` options or by configuring `remote.<name>.tagOpt`. By using a refspec that fetches tags explicitly, you can fetch tags that do not point into branches you are interested in as well.
+> **tags:** By default, any tag that points into the histories being fetched is also fetched; the effect is to fetch tags that point at branches that you are interested in. This default behavior can be changed by using the `--tags` or `--no-tags` options or by configuring `remote.<name>.tagOpt`. By using a refspec that fetches tags explicitly, you can fetch tags that do not point into branches you are interested in as well.
 
 `git fetch` can fetch from either a single named repository or URL, or from several repositories at once if `<group>` is given and there is a `remotes.<group>` entry in the configuration file.
 
@@ -10,8 +10,8 @@ The names of refs that are fetched, together with the object names they point at
 
 ```
 $ cat .git/FETCH_HEAD
-ca07d5f8b9888a29ff05b8c8b16f287cba40e747		branch 'master' of https://github.com/wangzhenj321/GitHub-Manual
-24d57dc9a45456c0784e18958a8a97ef9aaacc05	not-for-merge	branch 'dummy' of https://github.com/wangzhenj321/GitHub-Manual
+ca07d5f8b9888a29ff05b8c8b16f287cba40e747    branch 'master' of https://github.com/wangzhenj321/GitHub-Manual
+24d57dc9a45456c0784e18958a8a97ef9aaacc05    not-for-merge   branch 'dummy' of https://github.com/wangzhenj321/GitHub-Manual
 ```
 
 ## Synopsis
@@ -45,9 +45,9 @@ ca07d5f8b9888a29ff05b8c8b16f287cba40e747		branch 'master' of https://github.com/
 
 ## GIT URLS
 
-In general, URLs contain information about the transport protocol, the address of the remote server, and the path to the repository. Depending on the transport protocol, some of this information may be absent.
+In general, URLs contain information about **the transport protocol**, **the address of the remote server**, and **the path to the repository**. Depending on the transport protocol, some of this information may be absent.
 
-Git supports ssh, git, http, and https protocols (in addition, ftp, and ftps can be used for fetching and rsync can be used for fetching and pushing, but these are inefficient and deprecated; do not use them).
+Git supports **ssh**, **git**, **http**, and **https** protocols (in addition, **ftp**, and **ftps** can be used for fetching and **rsync** can be used for fetching and pushing, but these are inefficient and deprecated; do not use them).
 
 The native transport (i.e. git:// URL) does no authentication and should be used with caution on unsecured networks.
 
@@ -77,3 +77,7 @@ For local repositories, also supported by Git natively, the following syntaxes m
 - `file:///path/to/repo.git/`
 
 These two syntaxes are mostly equivalent, except when cloning, when the former implies `--local` option.
+
+## REMOTES
+
+
