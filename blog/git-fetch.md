@@ -80,12 +80,12 @@ These two syntaxes are mostly equivalent, except when cloning, when the former i
 
 ## REMOTES
 
-       The name of one of the following can be used instead of a URL as <repository> argument:
+The name of one of the following can be used instead of a URL as `<repository>` argument:
 
-       ·   a remote in the Git configuration file: $GIT_DIR/config,
+- a remote in the Git configuration file: `$GIT_DIR/config`
+- a file in the `$GIT_DIR/remotes` directory
+- a file in the `$GIT_DIR/branches` directory
 
-       ·   a file in the $GIT_DIR/remotes directory, or
+> `GIT_DIR` is the location of the `.git` folder. If this isn't specified, Git walks up the directory tree until it gets to `~` or `/`, looking for a `.git` directory at every step.
 
-       ·   a file in the $GIT_DIR/branches directory.
-
-       All of these also allow you to omit the refspec from the command line because they each contain a refspec which git will use by default.
+All of these also allow you to omit the refspec from the command line because they each contain a refspec which git will use by default.
