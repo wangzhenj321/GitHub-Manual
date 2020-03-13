@@ -1,8 +1,18 @@
 ## Description
 
-Fetch branches and/or tags (collectively, "refs") from one or more other repositories, along with the objects necessary to complete their histories. **Remote-tracking branches** are updated (see the description of `<refspec>` below for ways to control this behavior).
+Fetch **branches** and/or **tags** (collectively, "refs") from one or more other repositories, along with the objects necessary to complete their histories. **Remote-tracking branches** are updated (see the description of `<refspec>` below for ways to control this behavior).
+
+> By default, any tag that points into the histories being fetched is also fetched; the effect is to fetch tags that point at branches that you are interested in. This default behavior can be changed by using the `--tags` or `--no-tags` options or by configuring `remote.<name>.tagOpt`. By using a refspec that fetches tags explicitly, you can fetch tags that do not point into branches you are interested in as well.
 
 `git fetch` can fetch from either a single named repository or URL, or from several repositories at once if `<group>` is given and there is a `remotes.<group>` entry in the configuration file.
+
+The names of refs that are fetched, together with the object names they point at, are written to `.git/FETCH_HEAD`.
+
+```
+$ cat .git/FETCH_HEAD
+ca07d5f8b9888a29ff05b8c8b16f287cba40e747		branch 'master' of https://github.com/wangzhenj321/GitHub-Manual
+24d57dc9a45456c0784e18958a8a97ef9aaacc05	not-for-merge	branch 'dummy' of https://github.com/wangzhenj321/GitHub-Manual
+```
 
 ## Synopsis
 
@@ -10,15 +20,26 @@ Fetch branches and/or tags (collectively, "refs") from one or more other reposit
 
 ## Options
 
+- `-n, --no-tags`
+
+    By default, tags that point at objects that are downloaded from the remote repository are fetched and stored locally. This option disables this automatic tag following. The default behavior for a remote may be specified with the `remote.<name>.tagOpt` setting.
+
 - `<repository>`
 
-    The "remote" repository that is the source of a fetch or pull operation. This parameter can be either a URL (see the section GIT URLS below) or the name of a remote (see the section REMOTES below).
+    The "remote" repository that is the source of a fetch or pull operation. This parameter can be either a URL (see the section [GIT URLS](#git-urls) below) or the name of a remote (see the section REMOTES below).
 
 - `<refspec>`
 
-    Specifies which refs to fetch and which local refs to update. When no `<refspec>`s appear on the command line, the refs to fetch are read from `remote.<repository>.fetch` variables instead (see CONFIGURED REMOTE-TRACKING BRANCHES below).
+    Specifies **which refs to fetch** and **which local refs to update**. When no `<refspec>`s appear on the command line, the refs to fetch are read from `remote.<repository>.fetch` variables instead.
     
-    The format of a `<refspec>` parameter is an optional plus +, followed by the source ref `<src>`, followed by a colon :, followed by the destination ref `<dst>`. The colon can be omitted when `<dst>` is empty.
+    The format of a `<refspec>` parameter is an optional plus `+`, followed by the source ref `<src>`, followed by a colon `:`, followed by the destination ref `<dst>`. The colon can be omitted when `<dst>` is empty.
+    
+    ```
+    $ cat .git/config
+    [remote "origin"]
+        url = https://github.com/wangzhenj321/GitHub-Manual.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+    ```
     
     The remote ref that matches `<src>` is fetched, and if `<dst>` is not empty string, the local ref that matches it is fast-forwarded using `<src>`. If the optional plus + is used, the local ref is updated even if it does not result in a fast-forward update.
 
