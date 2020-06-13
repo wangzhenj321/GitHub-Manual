@@ -1,3 +1,5 @@
+https://git-scm.com/book/en/v2/Git-Tools-Submodules
+
 ## Part 1 `git submodule`
 
 ### `add <repository> [<path>]`
