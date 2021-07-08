@@ -15,3 +15,12 @@ Stores the current contents of the index in a new commit along with a log messag
 - `-m <msg>, --message=<msg>`
 
     Use the given <msg> as the commit message. If multiple `-m` options are given, their values are concatenated as separate paragraphs. The `-m` option is mutually exclusive with `-c`, `-C`, and `-F`.
+
+## Examples
+
+1. Amend the most recent commit message.
+    
+    ```
+    git commit --amend -m "New commit message"
+    ```
+    
