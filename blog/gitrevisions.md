@@ -25,7 +25,7 @@ A revision parameter `<rev>` typically, but not necessarily, names a commit obje
 | `<rev>^{}` | `v0.99.8^{}` |
 | `<rev>^{/<text>}` | `HEAD^{/fix nasty bug}` |
 | `:/<text>` | `:/fix nasty bug` |
-| `<rev>:<path>` | `HEAD:README`, `:README`, `master:./README` |
+| `<rev>:<path>` :star: | `HEAD:README`, `:README`, `master:./README` |
 | `:<n>:<path>` | `:0:README`, `:README` |
 
 ### Description of parts of object names
