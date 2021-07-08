@@ -37,3 +37,11 @@ The command takes options applicable to the `git diff-tree` command to control h
 - `--stat[=<width>[,<name-width>[,<count>]]]`
 
 - `--name-only`
+
+## Examples
+
+1. View a file in a different branch without changing branch.
+
+    ```
+    git show branch:file
+    ```
