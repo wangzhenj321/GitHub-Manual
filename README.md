@@ -51,6 +51,7 @@ Basic manual about how to use GitHub and Git
 5. [Upload local repo to GitHub](blog/Upload-local-repo-to-GitHub.md)
 6. [Use SSH over HTTPS port(443)](blog/Use-SSH-over-HTTPS-port-(443).md)
 7. [gitignore is not working](blog/gitignore-is-not-working.md)
+8. [Git Merge conflicts resolution made easy](blog/git-merge-conflicts-resolution-made-easy.md)
 
 ## Tools
 
