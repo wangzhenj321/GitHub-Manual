@@ -61,3 +61,7 @@ Show changes between the working tree and the index or a tree, changes between t
 - `<path>...`
 
     The `<paths>` parameters, when given, are used to limit the diff to the named paths (you can give directory names and get diff for all files under them).
+
+- `-U<n>, --unified=<n>`
+
+    Generate diffs with <n> lines of context instead of the usual three. Implies `-p`.
