@@ -8,7 +8,7 @@ This default configuration is achieved by creating references to the remote bran
 
 ## Synopsis
 
-- `git clone [-o <name>] [-b <name>] <repository>`
+- `git clone [-o <name>] [-b <name>] <repository> [<directory>]`
 
 ## Options
 
@@ -19,3 +19,11 @@ This default configuration is achieved by creating references to the remote bran
 - `-b <name>, --branch <name>`
 
     Instead of pointing the newly created `HEAD` to the branch pointed to by the cloned repository’s `HEAD`, point to `<name>` branch instead. In a non-bare repository, this is the branch that will be checked out. `--branch` can also take tags and detaches the `HEAD` at that commit in the resulting repository.
+
+- `<repository>`
+
+    The (possibly remote) repository to clone from.
+
+- `<directory>`
+
+    The name of a new directory to clone into. The "humanish" part of the source repository is used if no directory is explicitly given (repo for /path/to/repo.git and foo for host.xz:foo/.git). Cloning into an existing directory is only allowed if the directory is empty.
