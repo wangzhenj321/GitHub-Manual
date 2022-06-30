@@ -1,6 +1,6 @@
 ## Description
 
-- `git branch [-r | -a] [--list] [-v [--abbrev=<length> | --no-abbrev]] [<pattern>...]`
+- `git branch [-v [--abbrev=<length> | --no-abbrev]] [--contains [<commit>]] [(-r | --remotes) | (-a | --all)] [--list] [<pattern>...]`
 
     > :heavy_check_mark: **list**
 
@@ -32,7 +32,7 @@
 
 ## Synopsis
 
-- `git branch [-r | -a] [--list] [-v [--abbrev=<length> | --no-abbrev]] [<pattern>...]`
+- `git branch [-v [--abbrev=<length> | --no-abbrev]] [--contains [<commit>]] [(-r | --remotes) | (-a | --all)] [--list] [<pattern>...]`
 
 - `git branch [--set-upstream | --track | --no-track] [-l] [-f] <branchname> [<start-point>]`
 
@@ -64,14 +64,6 @@
 
     Activate the list mode.
     
-    - `-r, --remotes`
-
-        List or delete (if used with `-d`) the remote-tracking branches.
-
-    - `-a, --all`
-
-        List both remote-tracking branches and local branches.
-    
     - `-v, -vv, --verbose`
     
         When in list mode, show sha1 and commit subject line for each head, along with relationship to upstream branch (if any). If given twice, print the name of the upstream branch, as well
@@ -84,6 +76,18 @@ config option.
     - `--no-abbrev`
     
         Display the full sha1s in the output listing rather than abbreviating them.
+    
+    - `--contains [<commit>]`
+    
+        Only list branches which contain the specified commit (HEAD if not specified). Implies `--list`.
+    
+    - `-r, --remotes`
+
+        List or delete (if used with `-d`) the remote-tracking branches.
+
+    - `-a, --all`
+
+        List both remote-tracking branches and local branches.
     
     <img src="../img/git-branch/git_branch_list.png">
 
