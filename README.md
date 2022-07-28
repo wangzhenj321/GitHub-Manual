@@ -10,6 +10,7 @@ Basic manual about how to use GitHub and Git
 ## Commands
 
 1. [git add](blog/git-add.md)
+1. [git am](blog/git-am.md)
 1. [git apply](blog/git-apply.md)
 1. [git branch](blog/git-branch.md)
 1. [git checkout](blog/git-checkout.md)
@@ -20,6 +21,7 @@ Basic manual about how to use GitHub and Git
 1. [git config](blog/git-config.md)
 1. [git diff](blog/git-diff.md)
 1. [git fetch](blog/git-fetch.md)
+1. [git format-patch](blog/git-format-patch.md)
 1. [git gc](blog/git-gc.md)
 1. [git help](blog/git-help.md)
 1. [git init](blog/git-init.md)
