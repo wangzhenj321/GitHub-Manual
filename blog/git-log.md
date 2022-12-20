@@ -12,7 +12,7 @@ Shows the commit logs.
 
     Print out the ref names of any commits that are shown. If **short** is specified, the ref name prefixes `refs/heads/`, `refs/tags/` and `refs/remotes/` will not be printed. If **full** is specified, the full ref name (including prefix) will be printed. The default option is short.
         
-    <img src="../img/git-log/git_log_decorate.png" width="90%">
+    <img src="../img/git-log/git_log_decorate.png" width="70%">
 
 - `-<number>, -n <number>, --max-count=<number>`
 
@@ -46,28 +46,28 @@ Shows the commit logs.
 
     This is a shorthand for `--pretty=oneline --abbrev-commit` used together.
     
-    <img src="../img/git-log/git_log_oneline.png" width="70%">
+    <img src="../img/git-log/git_log_oneline.png" width="60%">
 
 - `--graph`
 
     Draw a text-based graphical representation of the commit history on the left hand side of the output.
         
-    <img src="../img/git-log/git_log_graph.png" width="50%">
+    <img src="../img/git-log/git_log_graph.png" width="40%">
 
 - `-p, -u, --patch`
 
     Generate patch (see section on generating patches).
     
-    <img src="../img/git-log/git_log_p.png" width="90%">
+    <img src="../img/git-log/git_log_p.png" width="70%">
 
 - `--stat[=<width>[,<name-width>[,<count>]]]`
 
     Generate a diffstat. By default, as much space as necessary will be used for the filename part, and the rest for the graph part.
     
-    <img src="../img/git-log/git_log_stat.png" width="50%">
+    <img src="../img/git-log/git_log_stat.png" width="40%">
 
 - `--name-only`
 
     Show only names of changed files.
     
-    <img src="../img/git-log/git_log_name-only.png" width="50%">
+    <img src="../img/git-log/git_log_name-only.png" width="40%">
