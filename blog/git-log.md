@@ -2,6 +2,25 @@
 
 Shows the commit logs.
 
+List commits that are reachable by following the **parent** links from the given commit(s), but exclude commits that are reachable from the one(s) given with a `^` in front of them. The output is given in reverse chronological order by default.
+
+You can think of this as a set operation. Commits reachable from any of the commits given on the command line form a set, and then commits reachable from any of the ones given with `^` in front are subtracted from that set. The remaining commits are what comes out in the command's output. Various other options and paths parameters can be used to further limit the result.
+
+Thus, the following command:
+
+```
+$ git log foo bar ^baz
+```
+
+means "list all the commits which are reachable from foo or bar, but not from baz".
+
+A special notation "<commit1>..<commit2>" can be used as a short-hand for "^<commit1> <commit2>". For example, either of the following may be used interchangeably:
+
+```
+$ git log origin..HEAD
+$ git log HEAD ^origin
+```
+    
 ## Synopsis
 
 `git log [<options>] [<revision range>] [[--] <path>...]`
