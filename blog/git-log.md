@@ -133,3 +133,17 @@ $ git log HEAD ^origin
     
     Binary files are searched as well.
 
+- `-G<regex>`
+
+    Look for differences whose patch text contains added/removed lines that match `<regex>`.
+
+    To illustrate the difference between `-S<regex> --pickaxe-regex` and `-G<regex>`, consider a commit with the following diff in the same file:
+
+    ```
+    +    return frotz(nitfol, two->ptr, 1, 0);
+    ...
+    -    hit = frotz(nitfol, mf2.ptr, 1, 0);
+    ```
+    
+    While `git log -G"frotz\(nitfol"` will show this commit, `git log -S"frotz\(nitfol" --pickaxe-regex` will not (because the number of occurrences of that string did not change).
+            
