@@ -39,6 +39,30 @@ $ git log HEAD ^origin
 
     Limit the number of commits to output.
 
+- `--since=<date>, --after=<date>`
+
+    Show commits more recent than a specific date.
+
+- `--until=<date>, --before=<date>`
+
+    Show commits older than a specific date.
+
+- `--author=<pattern>, --committer=<pattern>`
+
+    Limit the commits output to ones with author/committer header lines that match the specified pattern (regular expression). With more than one `--author=<pattern>`, commits whose author matches any of the given patterns are chosen (similarly for multiple `--committer=<pattern>`).
+
+- `--grep=<pattern>`
+
+    Limit the commits output to ones with log message that matches the specified pattern (regular expression). With more than one `--grep=<pattern>`, commits whose message matches any of the given patterns are chosen (but see `--all-match`).
+
+- `--all-match`
+
+    Limit the commits output to ones that match all given `--grep`, instead of ones that match at least one.
+
+- `--invert-grep`
+
+    Limit the commits output to ones with log message that do not match the pattern specified with `--grep=<pattern>`.
+
 - `--all`
 
     Pretend as if all the refs in **refs/**, along with **HEAD**, are listed on the command line as `<commit>`.
