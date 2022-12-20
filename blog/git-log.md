@@ -33,9 +33,17 @@ $ git log HEAD ^origin
         
     <img src="../img/git-log/git_log_decorate.png" width="70%">
 
+### Commit Limiting
+
 - `-<number>, -n <number>, --max-count=<number>`
 
     Limit the number of commits to output.
+
+- `--all`
+
+    Pretend as if all the refs in **refs/**, along with **HEAD**, are listed on the command line as `<commit>`.
+
+### Commit Formatting
 
 - `--pretty[=<format>], --format=<format>`
 
@@ -73,6 +81,8 @@ $ git log HEAD ^origin
         
     <img src="../img/git-log/git_log_graph.png" width="40%">
 
+## Diff formatting
+
 - `-p, -u, --patch`
 
     Generate patch (see section on generating patches).
@@ -90,3 +100,12 @@ $ git log HEAD ^origin
     Show only names of changed files.
     
     <img src="../img/git-log/git_log_name-only.png" width="40%">
+
+- `-S<string>`
+
+    Look for differences that change the number of occurrences of the specified string (i.e. addition/deletion) in a file. Intended for the scripter’s use.
+    
+    It is useful when you're looking for an exact block of code (like a struct), and want to know the history of that block since it first came into being: use the feature iteratively to feed the interesting block in the preimage back into `-S`, and keep going until you get the very first version of the block.
+    
+    Binary files are searched as well.
+
