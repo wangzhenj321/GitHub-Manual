@@ -93,13 +93,13 @@ $ git log HEAD ^origin
 
     Generate a diffstat. By default, as much space as necessary will be used for the filename part, and the rest for the graph part.
     
-    <img src="../img/git-log/git_log_stat.png" width="40%">
+    <img src="../img/git-log/git_log_stat.png" width="35%">
 
 - `--name-only`
 
     Show only names of changed files.
     
-    <img src="../img/git-log/git_log_name-only.png" width="40%">
+    <img src="../img/git-log/git_log_name-only.png" width="35%">
 
 - `-S<string>`
 
