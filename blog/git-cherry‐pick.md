@@ -91,6 +91,18 @@ Given one or more existing commits, apply the change each one introduces, record
 
     With this option, `git cherry-pick` will let you edit the commit message prior to committing.
 
+- `-m parent-number, --mainline parent-number`
+
+    Usually you cannot cherry-pick a merge because you do not know which side of the merge should be considered the mainline. This option specifies the parent number (starting from 1) of the mainline and allows cherry-pick to replay the change relative to the specified parent.
+    
+    A good example about how to select the parent number: https://qiita.com/takc923/items/8e2d87d692f840b14464.
+
+- `-n, --no-commit`
+
+    Usually the command automatically creates a sequence of commits. This flag applies the changes necessary to cherry-pick each named commit to your working tree and the index, without making any commit. In addition, when this option is used, your index does not have to match the HEAD commit. The cherry-pick is done against the beginning state of your index.
+
+    This is useful when cherry-picking more than one commits' effect to your index in a row.
+
 ### Examples
 
 1. `git cherry-pick master`
