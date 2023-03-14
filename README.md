@@ -57,6 +57,7 @@ Basic manual about how to use GitHub and Git
 1. [Use SSH over HTTPS port(443)](blog/Use-SSH-over-HTTPS-port-(443).md)
 1. [gitignore is not working](blog/gitignore-is-not-working.md)
 1. [Git Merge conflicts resolution made easy](blog/git-merge-conflicts-resolution-made-easy.md)
+1. [Exclude a directory from git diff](blog/Exclude-a-directory-from-git-diff.md)
 
 ## Tools
 
