@@ -45,6 +45,7 @@ Basic manual about how to use GitHub and Git
 ## Guides
 
 1. [gitrevisions](blog/gitrevisions.md)
+1. [gitignore](blog/gitignore.md)
 
 ## Q & A
 
