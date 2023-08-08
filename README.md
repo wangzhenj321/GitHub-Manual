@@ -26,6 +26,7 @@ Basic manual about how to use GitHub and Git
 1. [git help](blog/git-help.md)
 1. [git init](blog/git-init.md)
 1. [git log](blog/git-log.md)
+1. [git ls-remote](blog/git-ls-remote.md)
 1. [git merge/rebase/squash](blog/git-merge-rebase-squash.md)
 1. [git merge](blog/git-merge.md)
 1. [git prune](blog/git-prune.md)
